@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/swap/paw-swap-lite",
+  "title": "PAW Swap Lite",
+  "description": "PAW Swap Lite",
+  "source": "@site/docs/ecosystem/swap/PAW Swap Lite.mdx",
+  "sourceDirName": "ecosystem/swap",
+  "slug": "/ecosystem/swap/paw-swap-lite",
+  "permalink": "/ecosystem/swap/paw-swap-lite",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/swap/PAW Swap Lite.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "paw-swap-lite",
+    "slug": "/ecosystem/swap/paw-swap-lite",
+    "sidebar_label": "PAW Swap Lite",
+    "description": "PAW Swap Lite"
+  }
+}

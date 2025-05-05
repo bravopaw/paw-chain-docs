@@ -1,0 +1,29 @@
+{
+  "id": "validation/validator-driven-block-sizes",
+  "title": "Validator-Driven Block Sizes",
+  "description": "Validator-Driven Block Sizes",
+  "source": "@site/docs/validation/Validator-Driven Block Sizes.mdx",
+  "sourceDirName": "validation",
+  "slug": "/validation/validator-driven-block-sizes",
+  "permalink": "/validation/validator-driven-block-sizes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Validator-Driven Block Sizes.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "validator-driven-block-sizes",
+    "slug": "/validation/validator-driven-block-sizes",
+    "sidebar_label": "Validator-Driven Block Sizes",
+    "description": "Validator-Driven Block Sizes"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Real-Time Block Minting",
+    "permalink": "/validation/real-time-block-minting"
+  },
+  "next": {
+    "title": "PAW Validator Architecture",
+    "permalink": "/validation/validator-architecture"
+  }
+}

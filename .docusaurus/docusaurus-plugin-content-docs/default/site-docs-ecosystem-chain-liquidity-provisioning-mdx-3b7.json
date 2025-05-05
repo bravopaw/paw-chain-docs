@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/chain/liquidity-provisioning",
+  "title": "Liquidity Provisioning",
+  "description": "Liquidity Provisioning",
+  "source": "@site/docs/ecosystem/chain/Liquidity Provisioning.mdx",
+  "sourceDirName": "ecosystem/chain",
+  "slug": "/ecosystem/chain/liquidity-provisioning",
+  "permalink": "/ecosystem/chain/liquidity-provisioning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/chain/Liquidity Provisioning.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "liquidity-provisioning",
+    "slug": "/ecosystem/chain/liquidity-provisioning",
+    "sidebar_label": "Liquidity Provisioning",
+    "description": "Liquidity Provisioning"
+  }
+}

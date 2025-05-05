@@ -1,0 +1,29 @@
+{
+  "id": "community-and-support/paw-chain-glossary",
+  "title": "PAW Chain Glossary",
+  "description": "PAW Chain Glossary",
+  "source": "@site/docs/community-and-support/paw-chain-glossary.mdx",
+  "sourceDirName": "community-and-support",
+  "slug": "/community-and-support/paw-chain-glossary",
+  "permalink": "/community-and-support/paw-chain-glossary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/community-and-support/paw-chain-glossary.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "paw-chain-glossary",
+    "slug": "/community-and-support/paw-chain-glossary",
+    "sidebar_label": "PAW Chain Glossary",
+    "description": "PAW Chain Glossary"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Common Issues and Fixes",
+    "permalink": "/community-and-support/common-issues-and-fixes"
+  },
+  "next": {
+    "title": "Legal and Compliance",
+    "permalink": "/category/legal-and-compliance"
+  }
+}

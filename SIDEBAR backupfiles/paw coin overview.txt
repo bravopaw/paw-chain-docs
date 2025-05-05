@@ -1,0 +1,5 @@
+        'tokenomics/paw-coin-overview',
+
+
+
+//(in tokenomics category)

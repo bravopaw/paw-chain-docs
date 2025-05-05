@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/swap/paw-swap-introduction",
+  "title": "PAW Swap Introduction",
+  "description": "PAW Swap Introduction",
+  "source": "@site/docs/ecosystem/swap/PAW Swap Introduction.mdx",
+  "sourceDirName": "ecosystem/swap",
+  "slug": "/ecosystem/swap/paw-swap-introduction",
+  "permalink": "/ecosystem/swap/paw-swap-introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/swap/PAW Swap Introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "paw-swap-introduction",
+    "slug": "/ecosystem/swap/paw-swap-introduction",
+    "sidebar_label": "PAW Swap Introduction",
+    "description": "PAW Swap Introduction"
+  }
+}

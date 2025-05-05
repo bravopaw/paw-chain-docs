@@ -1,0 +1,86 @@
+---
+id: validator-architecture
+slug: /validation/validator-architecture
+sidebar_label: PAW Validator Architecture
+description: PAW Validator Architecture
+---
+
+# Validator Architecture
+
+To begin, the application must be installed on a `desktop device`.
+
+## Access Token Generation
+
+Once launched, the user can become a validator and receive a validator access token. This token is required to access and operate the application.
+
+## Validator Availability Verification
+
+On the wallet side, when a sender address is added, the system checks whether the validator is enabled or disabled.
+
+Transactions pass through the validator only if the validator process is enabled. If it is disabled, transactions proceed normally with other validators.
+
+## Block/Transaction Validation Process
+
+A validator must be selected to validate the block and transactions. For example,
+
+- If there are four clients, each with their own application, one validator is selected on the wallet side.
+- The selected validator is broadcasted along with transaction details and validator information.
+- These details are retrieved from the validator application and used to confirm whether the selected validator will process the transaction.
+- The chosen validator is responsible for encoding and encrypting the transaction, which is then decrypted on the validation side.
+
+Initially, after decryption, the validator examines the last block in their database. This block contains a hash, and based on this hash and the transaction details, an encryption hash is generated for the transaction.
+
+## Security and Access Control
+
+A key security feature of the application is each access token must be unique. A single access token can only be used to launch one instance of the application at a time. The same validator token cannot be used to start another instance simultaneously.
+
+## PAW Validator Architecture Diagram
+
+(insert validator architecture diagram image)
+
+## New Authentication Process
+
+- A unique ***appId*** is generated using the machine’s ***machineId*** upon the first installation of the validator application.
+- This ***appId*** is then used to generate an authentication token (authToken) every time a socket call is initiated.
+- The PAW socket server verifies the ***authToken*** before processing the request.
+- If the authentication fails, the validator is immediately removed from the active validators list to prevent unauthorized access.
+
+# Initial Application Setup and Data Import
+
+Since the database (DB) is initially empty, data must be imported before the application can function. This can be done in two ways:
+
+1. **Using an Existing Validator**: The user must obtain a validator ID, enter it, and click **"Fork"** to clone the database.
+2. **Using the Mempool**: Entering the **Paw Chain RPC URL** and clicking `Fork`` to save data in the database.
+
+Once the data is added, the user must click `Restart Application`. This setup process is required only during the first launch of the application
+
+# Database Structure and Availability Approach
+
+This approach is implemented to prevent downtime and increase system availability by ensuring continuous database operation.
+
+### 1. Primary Components of the Validator Database
+
+The validator database (DB) structure consists of six containers:
+
+- Sentinel-1
+- Sentinel-2
+- Sentinel-3
+- Master-DB
+- Slave-DB-1
+- Slave-DB-2
+
+### 2. Role of Sentinels
+
+Sentinels are responsible for monitoring and managing database availability:
+
+- They handle database functions and determine the active database at any given time.
+- If one sentinel fails, the remaining sentinels take over.
+- The presence of three sentinels ensures fault tolerance and seamless failover switching.
+
+### 3. Database Synchronization and Redundancy
+
+- The system operates with one master database and two slave databases.
+- All database instances are continuously synchronized, ensuring that every DB maintains the same data at all times.
+- If the master database fails, one of the slave databases automatically becomes the new master, ensuring uninterrupted operation.
+
+This architecture provides high availability, fault tolerance, and real-time data consistency, making the system resilient against failures.

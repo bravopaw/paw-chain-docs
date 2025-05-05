@@ -1,0 +1,29 @@
+{
+  "id": "legal-and-compliance/privacy-policy",
+  "title": "Privacy Policy",
+  "description": "Privacy Policy",
+  "source": "@site/docs/legal-and-compliance/privacy-policy.mdx",
+  "sourceDirName": "legal-and-compliance",
+  "slug": "/legal-and-compliance/privacy-policy",
+  "permalink": "/legal-and-compliance/privacy-policy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/legal-and-compliance/privacy-policy.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "privacy-policy",
+    "slug": "/legal-and-compliance/privacy-policy",
+    "sidebar_label": "Privacy Policy",
+    "description": "Privacy Policy"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Terms of Use",
+    "permalink": "/legal-and-compliance/terms-of-use"
+  },
+  "next": {
+    "title": "Compliance and Regulatory Disclosures",
+    "permalink": "/legal-and-compliance/compliance-and-regulatory-disclosures"
+  }
+}

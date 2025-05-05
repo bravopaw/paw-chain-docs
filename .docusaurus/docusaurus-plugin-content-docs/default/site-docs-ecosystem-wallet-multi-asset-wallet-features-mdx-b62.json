@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/wallet/multi-asset-wallet-features",
+  "title": "Multi-Asset Wallet Features",
+  "description": "Multi-Asset Wallet Features",
+  "source": "@site/docs/ecosystem/wallet/Multi-Asset Wallet Features.mdx",
+  "sourceDirName": "ecosystem/wallet",
+  "slug": "/ecosystem/wallet/multi-asset-wallet-features",
+  "permalink": "/ecosystem/wallet/multi-asset-wallet-features",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/wallet/Multi-Asset Wallet Features.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "multi-asset-wallet-features",
+    "slug": "/ecosystem/wallet/multi-asset-wallet-features",
+    "sidebar_label": "Multi-Asset Wallet Features",
+    "description": "Multi-Asset Wallet Features"
+  }
+}

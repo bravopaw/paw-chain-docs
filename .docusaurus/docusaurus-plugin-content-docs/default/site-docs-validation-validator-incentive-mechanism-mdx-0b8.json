@@ -1,0 +1,29 @@
+{
+  "id": "validation/validator-incentive-mechanism",
+  "title": "Validator Incentive Mechanism",
+  "description": "Validator Incentive Mechanism",
+  "source": "@site/docs/validation/Validator Incentive Mechanism.mdx",
+  "sourceDirName": "validation",
+  "slug": "/validation/validator-incentive-mechanism",
+  "permalink": "/validation/validator-incentive-mechanism",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Validator Incentive Mechanism.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "validator-incentive-mechanism",
+    "slug": "/validation/validator-incentive-mechanism",
+    "sidebar_label": "Validator Incentive Mechanism",
+    "description": "Validator Incentive Mechanism"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/validation/overview"
+  },
+  "next": {
+    "title": "Real-Time Block Minting",
+    "permalink": "/validation/real-time-block-minting"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "Cross-chain Interoperability/Cross-Chain-Interoperability-Introduction",
+  "title": "Cross-Chain",
+  "description": "Cross-Chain-Interoperability-Introduction",
+  "source": "@site/docs/Cross-chain Interoperability/Cross-Chain-Interoperability-Introduction.mdx",
+  "sourceDirName": "Cross-chain Interoperability",
+  "slug": "/cross-chain-interoperability/introduction",
+  "permalink": "/cross-chain-interoperability/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/Cross-chain Interoperability/Cross-Chain-Interoperability-Introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "Cross-Chain-Interoperability-Introduction",
+    "slug": "/cross-chain-interoperability/introduction",
+    "sidebar_label": "Cross-Chain Interoperability Introduction",
+    "description": "Cross-Chain-Interoperability-Introduction"
+  }
+}

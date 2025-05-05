@@ -1,0 +1,20 @@
+{
+  "id": "tokenomics/utility-and-governance",
+  "title": "Utility & Governance",
+  "description": "Utility & Governance",
+  "source": "@site/docs/tokenomics/utility-and-governance.mdx",
+  "sourceDirName": "tokenomics",
+  "slug": "/tokenomics/utility-and-governance",
+  "permalink": "/tokenomics/utility-and-governance",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/tokenomics/utility-and-governance.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "utility-and-governance",
+    "slug": "/tokenomics/utility-and-governance",
+    "sidebar_label": "Utility & Governance",
+    "description": "Utility & Governance"
+  }
+}

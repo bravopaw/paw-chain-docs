@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/tests",
+  "source": "@site/src/pages/tests.mdx",
+  "title": "Tests",
+  "description": "Docusaurus use some extra plugin instances for testing / dogfooding purpose:",
+  "frontMatter": {},
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/src/pages/tests.mdx",
+  "unlisted": false
+}

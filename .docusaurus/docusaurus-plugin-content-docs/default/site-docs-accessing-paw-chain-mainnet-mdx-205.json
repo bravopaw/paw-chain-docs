@@ -1,0 +1,30 @@
+{
+  "id": "Accessing PAW Chain Mainnet",
+  "title": "Accessing PAW Chain Mainnet",
+  "description": "tbc",
+  "source": "@site/docs/Accessing PAW Chain Mainnet.mdx",
+  "sourceDirName": ".",
+  "slug": "/accessing-paw-chain-mainnet",
+  "permalink": "/accessing-paw-chain-mainnet",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/Accessing PAW Chain Mainnet.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "Accessing PAW Chain Mainnet",
+    "title": "Accessing PAW Chain Mainnet",
+    "sidebar_label": "Accessing PAW Chain Mainnet",
+    "description": "tbc",
+    "slug": "/accessing-paw-chain-mainnet"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Set Up a PAW Wallet",
+    "permalink": "/set-up-a-paw-wallet"
+  },
+  "next": {
+    "title": "Supported Wallets",
+    "permalink": "/supported-wallets"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "validation/real-time-block-minting",
+  "title": "Real-Time Block Minting",
+  "description": "Real-Time Block Minting",
+  "source": "@site/docs/validation/Real-Time Block Minting.mdx",
+  "sourceDirName": "validation",
+  "slug": "/validation/real-time-block-minting",
+  "permalink": "/validation/real-time-block-minting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Real-Time Block Minting.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "real-time-block-minting",
+    "slug": "/validation/real-time-block-minting",
+    "sidebar_label": "Real-Time Block Minting",
+    "description": "Real-Time Block Minting"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Validator Incentive Mechanism",
+    "permalink": "/validation/validator-incentive-mechanism"
+  },
+  "next": {
+    "title": "Validator-Driven Block Sizes",
+    "permalink": "/validation/validator-driven-block-sizes"
+  }
+}

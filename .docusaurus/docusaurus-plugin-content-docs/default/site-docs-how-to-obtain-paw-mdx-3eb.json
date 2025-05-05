@@ -1,0 +1,30 @@
+{
+  "id": "How to Obtain $PAW",
+  "title": "Set Up a PAW Wallet",
+  "description": "How to install and configure PAW Chain",
+  "source": "@site/docs/How to Obtain $PAW.mdx",
+  "sourceDirName": ".",
+  "slug": "/how-to-obtain-paw",
+  "permalink": "/how-to-obtain-paw",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/How to Obtain $PAW.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "How to Obtain $PAW",
+    "title": "Set Up a PAW Wallet",
+    "sidebar_label": "How to Obtain $PAW",
+    "description": "How to install and configure PAW Chain",
+    "slug": "/how-to-obtain-paw"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Supported Wallets",
+    "permalink": "/supported-wallets"
+  },
+  "next": {
+    "title": "Connecting to PAW Swap",
+    "permalink": "/connecting-to-paw-swap"
+  }
+}

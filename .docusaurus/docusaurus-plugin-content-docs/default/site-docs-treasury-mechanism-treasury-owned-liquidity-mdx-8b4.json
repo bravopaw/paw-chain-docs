@@ -1,0 +1,20 @@
+{
+  "id": "treasury-mechanism/treasury-owned-liquidity",
+  "title": "Treasury Owned Liquidity",
+  "description": "Treasury Owned Liquidity",
+  "source": "@site/docs/treasury-mechanism/treasury-owned-liquidity.mdx",
+  "sourceDirName": "treasury-mechanism",
+  "slug": "/treasury-mechanism/treasury-owned-liquidity",
+  "permalink": "/treasury-mechanism/treasury-owned-liquidity",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/treasury-mechanism/treasury-owned-liquidity.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "treasury-owned-liquidity",
+    "slug": "/treasury-mechanism/treasury-owned-liquidity",
+    "sidebar_label": "Treasury Owned Liquidity",
+    "description": "Treasury Owned Liquidity"
+  }
+}

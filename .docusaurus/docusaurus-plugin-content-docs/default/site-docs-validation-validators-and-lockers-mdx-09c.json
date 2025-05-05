@@ -1,0 +1,29 @@
+{
+  "id": "validation/validators-and-lockers",
+  "title": "Validators and Lockers",
+  "description": "Validators and Lockers",
+  "source": "@site/docs/validation/Validators and Lockers.mdx",
+  "sourceDirName": "validation",
+  "slug": "/validation/validators-and-lockers",
+  "permalink": "/validation/validators-and-lockers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Validators and Lockers.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "validators-and-lockers",
+    "slug": "/validation/validators-and-lockers",
+    "sidebar_label": "Validators and Lockers",
+    "description": "Validators and Lockers"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Penalties",
+    "permalink": "/validation/delegators/penalties"
+  },
+  "next": {
+    "title": "Redis Database System",
+    "permalink": "/validation/redis-database-system"
+  }
+}

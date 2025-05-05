@@ -1,0 +1,462 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+:root {
+  /*
+  See css var + hsl color palette technique:
+  https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
+   */
+  --site-primary-hue-saturation: 167 68%;
+  --site-primary-hue-saturation-light: 167 56%; /* do we really need this extra one? */
+  --site-color-feedback-background: #f0f8ff;
+  --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
+  /* Use a darker color to ensure contrast, ideally we don't need important */
+  --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker) !important;
+  --ifm-menu-color-active: var(--ifm-color-primary-darker) !important;
+}
+
+html[data-theme='dark'] {
+  --site-color-feedback-background: #2a2929;
+  --docusaurus-highlighted-code-line-bg: rgb(66 66 66 / 35%);
+}
+
+/*
+ * This selector will be dynamically replaced by the color generator. Don't put
+ * other properties here.
+ */
+[data-theme='light'] {
+  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 30%);
+  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 26%);
+  --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 23%);
+  --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 17%);
+
+  --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light) 39%);
+  --ifm-color-primary-lighter: hsl(
+    var(--site-primary-hue-saturation-light) 47%
+  );
+  --ifm-color-primary-lightest: hsl(
+    var(--site-primary-hue-saturation-light) 58%
+  );
+}
+
+/*
+ * This selector will be dynamically replaced by the color generator. Don't put
+ * other properties here.
+ */
+[data-theme='dark'] {
+  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 45%);
+  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 41%);
+  --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 38%);
+  --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 32%);
+
+  --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light) 54%);
+  --ifm-color-primary-lighter: hsl(
+    var(--site-primary-hue-saturation-light) 62%
+  );
+  --ifm-color-primary-lightest: hsl(
+    var(--site-primary-hue-saturation-light) 73%
+  );
+}
+
+.header-github-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
+  transition: background-color var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+}
+
+.header-github-link:hover::before {
+  background-color: var(--ifm-navbar-link-hover-color);
+}
+
+/* Base icon style */
+.navbar-icon::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  transition: background-color var(--ifm-transition-fast)
+  var(--ifm-transition-timing-default);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+
+.header-telegram-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.40607 21.0673C17.8013 16.128 24.0662 12.8717 27.2009 11.2984C36.1511 6.80636 38.0108 6.02604 39.223 6.00027C39.4896 5.99461 40.0857 6.07434 40.4719 6.45241C40.7979 6.77165 40.8876 7.2029 40.9306 7.50557C40.9735 7.80824 41.0269 8.49774 40.9844 9.0365C40.4994 15.1857 38.4008 30.1084 37.3331 36.9956C36.8813 39.9099 35.9918 40.887 35.1306 40.9827C33.259 41.1905 31.8379 39.4902 30.0252 38.0564C27.1887 35.8127 25.5862 34.416 22.8329 32.2267C19.6509 29.6965 21.7137 28.3058 23.527 26.0331C24.0016 25.4383 32.2477 16.3877 32.4074 15.5667C32.4273 15.464 32.4458 15.0813 32.2574 14.8791C32.069 14.677 31.7908 14.7461 31.5901 14.8011C31.3056 14.879 26.7743 18.4931 17.996 25.6433C16.7098 26.709 15.5448 27.2283 14.501 27.2011C13.3503 27.1711 11.1367 26.416 9.49121 25.7705C7.4729 24.9789 5.8688 24.5603 6.00848 23.2158C6.08123 22.5155 6.88043 21.7994 8.40607 21.0673Z'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.40607 21.0673C17.8013 16.128 24.0662 12.8717 27.2009 11.2984C36.1511 6.80636 38.0108 6.02604 39.223 6.00027C39.4896 5.99461 40.0857 6.07434 40.4719 6.45241C40.7979 6.77165 40.8876 7.2029 40.9306 7.50557C40.9735 7.80824 41.0269 8.49774 40.9844 9.0365C40.4994 15.1857 38.4008 30.1084 37.3331 36.9956C36.8813 39.9099 35.9918 40.887 35.1306 40.9827C33.259 41.1905 31.8379 39.4902 30.0252 38.0564C27.1887 35.8127 25.5862 34.416 22.8329 32.2267C19.6509 29.6965 21.7137 28.3058 23.527 26.0331C24.0016 25.4383 32.2477 16.3877 32.4074 15.5667C32.4273 15.464 32.4458 15.0813 32.2574 14.8791C32.069 14.677 31.7908 14.7461 31.5901 14.8011C31.3056 14.879 26.7743 18.4931 17.996 25.6433C16.7098 26.709 15.5448 27.2283 14.501 27.2011C13.3503 27.1711 11.1367 26.416 9.49121 25.7705C7.4729 24.9789 5.8688 24.5603 6.00848 23.2158C6.08123 22.5155 6.88043 21.7994 8.40607 21.0673Z'/%3E%3C/svg%3E");
+  transition: background-color var(--ifm-transition-fast)
+  var(--ifm-transition-timing-default);
+}
+
+
+.header-discord-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38.4013 9.73552C35.6606 8.46937 32.7217 7.53652 29.6488 7.00224C29.5929 6.99193 29.537 7.0177 29.5081 7.06924C29.1302 7.7461 28.7115 8.62913 28.4183 9.32318C25.1132 8.82499 21.8251 8.82499 18.5878 9.32318C18.2946 8.6137 17.8607 7.7461 17.481 7.06924C17.4522 7.01942 17.3963 6.99365 17.3403 7.00224C14.2692 7.53481 11.3302 8.46766 8.58784 9.73552C8.5641 9.74583 8.54375 9.76302 8.53025 9.78534C2.95566 18.1707 1.42855 26.35 2.1777 34.4278C2.18109 34.4673 2.20312 34.5051 2.23363 34.5292C5.91158 37.2487 9.47431 38.8997 12.9709 39.994C13.0268 40.0112 13.0861 39.9906 13.1217 39.9442C13.9489 38.8069 14.6862 37.6078 15.3183 36.3467C15.3556 36.2729 15.32 36.1853 15.2438 36.1561C14.0743 35.7094 12.9607 35.1648 11.8895 34.5464C11.8048 34.4965 11.798 34.3745 11.8759 34.3161C12.1014 34.146 12.3268 33.9691 12.5421 33.7904C12.581 33.7578 12.6353 33.7509 12.6811 33.7715C19.7183 37.0065 27.3369 37.0065 34.2911 33.7715C34.3369 33.7492 34.3912 33.7561 34.4318 33.7887C34.6471 33.9674 34.8725 34.146 35.0996 34.3161C35.1776 34.3745 35.1725 34.4965 35.0878 34.5464C34.0166 35.1768 32.903 35.7094 31.7318 36.1544C31.6556 36.1836 31.6217 36.2729 31.659 36.3467C32.3047 37.606 33.042 38.8052 33.8539 39.9425C33.8878 39.9906 33.9488 40.0112 34.0047 39.994C37.5182 38.8997 41.0809 37.2487 44.7589 34.5292C44.7911 34.5051 44.8115 34.469 44.8149 34.4295C45.7114 25.0906 43.3131 16.9785 38.4572 9.78705C38.4453 9.76302 38.4251 9.74583 38.4013 9.73552Z'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38.4013 9.73552C35.6606 8.46937 32.7217 7.53652 29.6488 7.00224C29.5929 6.99193 29.537 7.0177 29.5081 7.06924C29.1302 7.7461 28.7115 8.62913 28.4183 9.32318C25.1132 8.82499 21.8251 8.82499 18.5878 9.32318C18.2946 8.6137 17.8607 7.7461 17.481 7.06924C17.4522 7.01942 17.3963 6.99365 17.3403 7.00224C14.2692 7.53481 11.3302 8.46766 8.58784 9.73552C8.5641 9.74583 8.54375 9.76302 8.53025 9.78534C2.95566 18.1707 1.42855 26.35 2.1777 34.4278C2.18109 34.4673 2.20312 34.5051 2.23363 34.5292C5.91158 37.2487 9.47431 38.8997 12.9709 39.994C13.0268 40.0112 13.0861 39.9906 13.1217 39.9442C13.9489 38.8069 14.6862 37.6078 15.3183 36.3467C15.3556 36.2729 15.32 36.1853 15.2438 36.1561C14.0743 35.7094 12.9607 35.1648 11.8895 34.5464C11.8048 34.4965 11.798 34.3745 11.8759 34.3161C12.1014 34.146 12.3268 33.9691 12.5421 33.7904C12.581 33.7578 12.6353 33.7509 12.6811 33.7715C19.7183 37.0065 27.3369 37.0065 34.2911 33.7715C34.3369 33.7492 34.3912 33.7561 34.4318 33.7887C34.6471 33.9674 34.8725 34.146 35.0996 34.3161C35.1776 34.3745 35.1725 34.4965 35.0878 34.5464C34.0166 35.1768 32.903 35.7094 31.7318 36.1544C31.6556 36.1836 31.6217 36.2729 31.659 36.3467C32.3047 37.606 33.042 38.8052 33.8539 39.9425C33.8878 39.9906 33.9488 40.0112 34.0047 39.994C37.5182 38.8997 41.0809 37.2487 44.7589 34.5292C44.7911 34.5051 44.8115 34.469 44.8149 34.4295C45.7114 25.0906 43.3131 16.9785 38.4572 9.78705C38.4453 9.76302 38.4251 9.74583 38.4013 9.73552Z'/%3E%3C/svg%3E");
+  transition: background-color var(--ifm-transition-fast)
+  var(--ifm-transition-timing-default);
+}
+
+
+.header-reddit-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.594 10.5637C30.0707 12.5589 31.8852 14.0452 34.0519 14.0452C36.5816 14.0452 38.6323 12.0203 38.6323 9.5226C38.6323 7.02489 36.5816 5 34.0519 5C31.8401 5 29.9955 6.54782 29.566 8.60663C25.8618 8.99888 22.9693 12.1009 22.9693 15.8602C22.9693 15.8687 22.9693 15.875 22.9693 15.8835C18.9408 16.051 15.2623 17.1832 12.3418 18.9707C11.2574 18.1416 9.89595 17.6476 8.41855 17.6476C4.87321 17.6476 2 20.4845 2 23.9852C2 26.5253 3.51176 28.7134 5.69566 29.7248C5.90825 37.0822 14.0275 43 24.015 43C34.0025 43 42.1325 37.0759 42.3344 29.7121C44.5011 28.6943 46 26.5126 46 23.9873C46 20.4867 43.1268 17.6497 39.5815 17.6497C38.1105 17.6497 36.7555 18.1395 35.6732 18.9622C32.727 17.162 29.0077 16.0298 24.9384 15.8793C24.9384 15.8729 24.9384 15.8687 24.9384 15.8623C24.9384 13.1695 26.9655 10.9347 29.594 10.5679V10.5637Z'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.594 10.5637C30.0707 12.5589 31.8852 14.0452 34.0519 14.0452C36.5816 14.0452 38.6323 12.0203 38.6323 9.5226C38.6323 7.02489 36.5816 5 34.0519 5C31.8401 5 29.9955 6.54782 29.566 8.60663C25.8618 8.99888 22.9693 12.1009 22.9693 15.8602C22.9693 15.8687 22.9693 15.875 22.9693 15.8835C18.9408 16.051 15.2623 17.1832 12.3418 18.9707C11.2574 18.1416 9.89595 17.6476 8.41855 17.6476C4.87321 17.6476 2 20.4845 2 23.9852C2 26.5253 3.51176 28.7134 5.69566 29.7248C5.90825 37.0822 14.0275 43 24.015 43C34.0025 43 42.1325 37.0759 42.3344 29.7121C44.5011 28.6943 46 26.5126 46 23.9873C46 20.4867 43.1268 17.6497 39.5815 17.6497C38.1105 17.6497 36.7555 18.1395 35.6732 18.9622C32.727 17.162 29.0077 16.0298 24.9384 15.8793C24.9384 15.8729 24.9384 15.8687 24.9384 15.8623C24.9384 13.1695 26.9655 10.9347 29.594 10.5679V10.5637Z'/%3E%3C/svg%3E");
+  transition: background-color var(--ifm-transition-fast)
+  var(--ifm-transition-timing-default);
+}
+
+
+.header-cmc-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42.4057 24V23.9666V23.9331C42.3722 13.509 33.9636 5 23.7036 5C13.3934 5 5 13.509 5 24C5 34.4576 13.3934 43 23.7021 43C28.4612 43 32.9376 41.1988 36.4078 37.911C37.1009 37.2498 37.151 36.1767 36.4746 35.4821C35.8469 34.7874 34.7722 34.7388 34.0791 35.3666C34.0791 35.3666 34.0791 35.3666 34.0457 35.4C31.2534 38.0433 27.4869 39.5633 23.62 39.5633C19.0934 39.5633 15.0457 37.5812 12.2367 34.409L20.2334 21.6045V27.5355C20.2334 30.3779 21.34 31.2854 22.2657 31.5498C23.1914 31.8143 24.5791 31.6152 26.0991 29.2364L30.4767 22.1319C30.6257 21.9176 30.7412 21.6866 30.8902 21.5376V25.14C30.8902 27.7833 31.9648 29.931 33.7979 30.9555C35.4502 31.9146 37.5478 31.7976 39.2836 30.7412C41.4146 29.3367 42.5546 26.9078 42.4057 24Z'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42.4057 24V23.9666V23.9331C42.3722 13.509 33.9636 5 23.7036 5C13.3934 5 5 13.509 5 24C5 34.4576 13.3934 43 23.7021 43C28.4612 43 32.9376 41.1988 36.4078 37.911C37.1009 37.2498 37.151 36.1767 36.4746 35.4821C35.8469 34.7874 34.7722 34.7388 34.0791 35.3666C34.0791 35.3666 34.0791 35.3666 34.0457 35.4C31.2534 38.0433 27.4869 39.5633 23.62 39.5633C19.0934 39.5633 15.0457 37.5812 12.2367 34.409L20.2334 21.6045V27.5355C20.2334 30.3779 21.34 31.2854 22.2657 31.5498C23.1914 31.8143 24.5791 31.6152 26.0991 29.2364L30.4767 22.1319C30.6257 21.9176 30.7412 21.6866 30.8902 21.5376V25.14C30.8902 27.7833 31.9648 29.931 33.7979 30.9555C35.4502 31.9146 37.5478 31.7976 39.2836 30.7412C41.4146 29.3367 42.5546 26.9078 42.4057 24Z'/%3E%3C/svg%3E");
+  transition: background-color var(--ifm-transition-fast)
+  var(--ifm-transition-timing-default);
+}
+
+
+.header-x-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M34.9272 7H40.7541L28.0241 21.4021L43 41H31.274L22.0897 29.1139L11.5808 41H5.75038L19.3665 25.5954L5 7H17.0237L25.3255 17.8643L34.9272 7ZM32.8822 37.5477H36.1109L15.2693 10.271H11.8045L32.8822 37.5477Z'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M34.9272 7H40.7541L28.0241 21.4021L43 41H31.274L22.0897 29.1139L11.5808 41H5.75038L19.3665 25.5954L5 7H17.0237L25.3255 17.8643L34.9272 7ZM32.8822 37.5477H36.1109L15.2693 10.271H11.8045L32.8822 37.5477Z'/%3E%3C/svg%3E");
+  transition: background-color var(--ifm-transition-fast)
+  var(--ifm-transition-timing-default);
+}
+
+
+/* Hover effect */
+.header-telegram-link:hover::before,
+.header-discord-link:hover::before,
+.header-reddit-link:hover::before,
+.header-cmc-link:hover::before,
+.header-x-link:hover::before {
+  background-color: var(--ifm-navbar-link-hover-color);
+}
+
+
+.footer--dark {
+  --ifm-footer-background-color: #2b3137;
+}
+
+.unique-tabs .tabs__item {
+  line-height: 16px;
+  margin-right: 8px;
+}
+
+.unique-tabs .tabs__item--active {
+  border: 0;
+  color: #fff;
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-tabs-color-active);
+}
+
+[data-theme='light'] .themedDocusaurus [fill='#FFFF50'] {
+  fill: greenyellow;
+}
+
+[data-theme='dark'] .themedDocusaurus [fill='#FFFF50'] {
+  fill: seagreen;
+}
+
+[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-emphasis-700);
+  --docsearch-container-background: rgb(94 100 112 / 70%);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgb(47 55 69 / 70%);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+
+div[class^='announcementBar_'] {
+  font-size: 20px;
+
+  /*
+  --site-announcement-bar-stripe-color1: hsl(
+    var(--site-primary-hue-saturation) 85%
+  );
+  --site-announcement-bar-stripe-color2: hsl(
+    var(--site-primary-hue-saturation) 95%
+  );
+   */
+  --site-announcement-bar-stripe-color1: #e8d7ff;
+  --site-announcement-bar-stripe-color2: #ffe9d1;
+
+  background: repeating-linear-gradient(
+    35deg,
+    var(--site-announcement-bar-stripe-color1),
+    var(--site-announcement-bar-stripe-color1) 20px,
+    var(--site-announcement-bar-stripe-color2) 10px,
+    var(--site-announcement-bar-stripe-color2) 40px
+  );
+  font-weight: bold;
+}
+
+.screen-reader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+[data-theme='light'] img[src$='#gh-dark-mode-only'],
+[data-theme='dark'] img[src$='#gh-light-mode-only'] {
+  display: none;
+}
+
+/* Used to test CSS insertion order */
+.test-marker-site-custom-css-unique-rule {
+  content: 'site-custom-css-unique-rule';
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.yt-lite > .lty-playbtn {
+  cursor: pointer;
+  border: 0;
+}
+
+.dropdown-separator {
+  margin: 0.3rem 0;
+}
+
+.dropdown-archived-versions {
+  font-size: 0.875rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.code-block-error-line {
+  background-color: #ff000020;
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid #ff000080;
+}
+
+[data-rmiz-modal-overlay='visible'] {
+  background-color: rgba(255 255 255 / 95%);
+}
+
+[data-theme='dark'] [data-rmiz-modal-overlay='visible'] {
+  background-color: rgba(0 0 0 / 95%);
+}
+
+html[data-navbar='false'] .navbar {
+  display: none;
+}
+
+html[data-red-border] div#__docusaurus {
+  border: red solid thick;
+}
+/* Navbar Brand - Light mode */
+.navbar__brand,
+.navbar__brand a {
+  color: #214a9c !important; /* light blue color for light theme */
+  transition: color 0.3s ease;
+}
+
+/* Navbar Brand - Light mode Hover */
+.navbar__brand:hover,
+.navbar__brand a:hover {
+  color: #aca1ff !important; /* a lighter shade of #214a9c for hover */
+}
+
+/* Navbar Brand - Dark mode */
+[data-theme="dark"] .navbar__brand,
+[data-theme="dark"] .navbar__brand a {
+  color: #dbd7ff !important; /* light purple for dark mode */
+}
+
+/* Navbar Brand - Dark mode Hover */
+[data-theme="dark"] .navbar__brand:hover,
+[data-theme="dark"] .navbar__brand a:hover {
+  color: #214a9c !important; /* a lighter shade of #aca1ff for hover in dark mode */
+}
+
+/* h1 - Light mode */
+h1 {
+  color: #214a9c !important; /* light blue for light theme */
+  transition: color 0.3s ease;
+}
+
+/* h1 - Dark mode */
+[data-theme="dark"] h1 {
+  color: #dbd7ff !important; /* light purple for dark mode */
+}
+/* Active menu link - Light mode */
+.menu__link--active:not(.menu__link--sublist) {
+  color: rgb(121 0 255 / 9%) !important; /* Light mode active link color */
+}
+
+/* Active menu link - Dark mode */
+[data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
+  color: rgb(36, 37, 38) !important; /* Dark mode active link color */
+}
+
+/* Background surface color - Dark mode */
+[data-theme="dark"] {
+  --ifm-background-surface-color: #1d242a !important; /* Dark mode surface background color */
+}
+
+
+
+/* Light Mode Footer */
+[data-theme="light"] .theme-layout-footer.footer.footer--dark {
+  background-color: #1d242a !important;
+}
+
+/* Dark Mode Footer */
+[data-theme="dark"] .theme-layout-footer.footer.footer--dark {
+  background-color: #1d242a !important;
+}
+/* Dark Mode Announcement Bar */
+[data-theme="dark"] .announcementBar_cTOO {
+  background-color: #232b33 !important;
+}
+
+/* Dark Mode Links inside content_ttnW */
+[data-theme="dark"] .content_ttnW a {
+  color: white !important;
+}
+/* Dark Mode Links inside content_ttnW */
+[data-theme="light"] .content_ttnW a {
+  color: #214a9c !important;
+}
+
+/* Light Mode Active Menu Link */
+[data-theme="light"] .menu__link--active:not(.menu__link--sublist) {
+  color: #214a9c !important;
+}
+
+/* Dark Mode Active Menu Link */
+[data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
+  color: #dbd7ff !important;
+}
+/* Light Mode Hover and Active Menu Link */
+[data-theme="light"] .menu__list-item-collapsible .menu__link:hover,
+[data-theme="light"] .menu__list-item-collapsible .menu__link--active {
+  color: #214a9c !important;
+}
+
+/* Dark Mode Hover and Active Menu Link */
+[data-theme="dark"] .menu__list-item-collapsible .menu__link:hover,
+[data-theme="dark"] .menu__list-item-collapsible .menu__link--active {
+  color: #e8e5ff !important;
+}
+/* Light Mode --ifm-breadcrumb-color-active */
+[data-theme="light"] {
+  --ifm-breadcrumb-color-active: #214a9c !important;
+}
+
+/* Dark Mode --ifm-breadcrumb-color-active */
+[data-theme="dark"] {
+  --ifm-breadcrumb-color-active: #dbd7ff !important;
+}
+
+/* Custom CSS for font size adjustments */
+[data-theme="light"] .menu__list-item-collapsible .menu__link,
+[data-theme="light"] .menu__list-item-collapsible .menu__link:hover,
+[data-theme="light"] .menu__list-item-collapsible .menu__link--active {
+  font-size: 15px;
+}
+/* Custom CSS for font size adjustments */
+[data-theme="dark"] .menu__list-item-collapsible .menu__link,
+[data-theme="dark"] .menu__list-item-collapsible .menu__link:hover,
+[data-theme="dark"] .menu__list-item-collapsible .menu__link--active {
+  font-size: 15px;
+}
+
+.menu__link {
+  font-size: 15px;
+}
+
+.menu__link {
+  font-size: 15px;
+}
+.theme-edit-this-page {
+  display: none;
+}
+.theme-last-updated {
+  display: none;
+}
+
+
+
+.navbar__logo {
+  margin-right: 1rem !important; /* increases space between logo and text */
+}

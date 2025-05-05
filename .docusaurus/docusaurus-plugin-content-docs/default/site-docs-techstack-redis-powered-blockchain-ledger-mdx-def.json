@@ -1,0 +1,29 @@
+{
+  "id": "techstack/redisledger",
+  "title": "Redis-Powered Blockchain Ledger",
+  "description": "Redis-Powered Blockchain Ledger",
+  "source": "@site/docs/techstack/Redis-Powered Blockchain Ledger.mdx",
+  "sourceDirName": "techstack",
+  "slug": "/techstack/redis-ledger",
+  "permalink": "/techstack/redis-ledger",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/techstack/Redis-Powered Blockchain Ledger.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "redisledger",
+    "slug": "/techstack/redis-ledger",
+    "sidebar_label": "Redis-Powered Blockchain Ledger",
+    "description": "Redis-Powered Blockchain Ledger"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Node.js & Typescript Core",
+    "permalink": "/techstack/node-js-typescript-core"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/validation/overview"
+  }
+}

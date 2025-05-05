@@ -1,0 +1,25 @@
+{
+  "id": "legal-and-compliance/compliance-and-regulatory-disclosures",
+  "title": "Compliance and Regulatory Disclosures",
+  "description": "Compliance and Regulatory Disclosures",
+  "source": "@site/docs/legal-and-compliance/compliance-and-regulatory-disclosures.mdx",
+  "sourceDirName": "legal-and-compliance",
+  "slug": "/legal-and-compliance/compliance-and-regulatory-disclosures",
+  "permalink": "/legal-and-compliance/compliance-and-regulatory-disclosures",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/legal-and-compliance/compliance-and-regulatory-disclosures.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "compliance-and-regulatory-disclosures",
+    "slug": "/legal-and-compliance/compliance-and-regulatory-disclosures",
+    "sidebar_label": "Compliance and Regulatory Disclosures",
+    "description": "Compliance and Regulatory Disclosures"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Privacy Policy",
+    "permalink": "/legal-and-compliance/privacy-policy"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "community-and-support/paw-chain-faq",
+  "title": "PAW Chain FAQ",
+  "description": "PAW Chain FAQ",
+  "source": "@site/docs/community-and-support/paw-chain-faq.mdx",
+  "sourceDirName": "community-and-support",
+  "slug": "/community-and-support/paw-chain-faq",
+  "permalink": "/community-and-support/paw-chain-faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/community-and-support/paw-chain-faq.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "paw-chain-faq",
+    "slug": "/community-and-support/paw-chain-faq",
+    "sidebar_label": "PAW Chain FAQ",
+    "description": "PAW Chain FAQ"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Join the Community",
+    "permalink": "/community-and-support/join-the-community"
+  },
+  "next": {
+    "title": "Common Issues and Fixes",
+    "permalink": "/community-and-support/common-issues-and-fixes"
+  }
+}

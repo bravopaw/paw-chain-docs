@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/chain/paw-chain-introduction",
+  "title": "PAW Chain Introduction",
+  "description": "PAW Chain Introduction",
+  "source": "@site/docs/ecosystem/chain/PAW Chain Introduction.mdx",
+  "sourceDirName": "ecosystem/chain",
+  "slug": "/ecosystem/chain/paw-chain-introduction",
+  "permalink": "/ecosystem/chain/paw-chain-introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/chain/PAW Chain Introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "paw-chain-introduction",
+    "slug": "/ecosystem/chain/paw-chain-introduction",
+    "sidebar_label": "Introduction",
+    "description": "PAW Chain Introduction"
+  }
+}

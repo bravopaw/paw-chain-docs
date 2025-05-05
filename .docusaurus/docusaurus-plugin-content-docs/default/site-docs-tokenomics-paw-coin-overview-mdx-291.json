@@ -1,0 +1,20 @@
+{
+  "id": "tokenomics/paw-coin-overview",
+  "title": "$PAW Coin Overview",
+  "description": "$PAW Coin Overview",
+  "source": "@site/docs/tokenomics/paw-coin-overview.mdx",
+  "sourceDirName": "tokenomics",
+  "slug": "/tokenomics/paw-coin-overview",
+  "permalink": "/tokenomics/paw-coin-overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/tokenomics/paw-coin-overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "paw-coin-overview",
+    "slug": "/tokenomics/paw-coin-overview",
+    "sidebar_label": "$PAW Coin Overview",
+    "description": "$PAW Coin Overview"
+  }
+}

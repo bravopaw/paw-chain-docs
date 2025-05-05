@@ -1,0 +1,22 @@
+{
+  "permalink": "/changelog/V2 Changelog",
+  "source": "@site/changelog/source/V2 Changelog.md",
+  "title": "V2 Changelog",
+  "description": "siteConfig.js changes",
+  "date": "2019-04-10T20:00:00.000Z",
+  "tags": [],
+  "hasTruncateMarker": true,
+  "authors": [],
+  "frontMatter": {
+    "mdx": {
+      "format": "md"
+    },
+    "date": "2019-04-10T20:00"
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "2.0.0-alpha.19",
+    "permalink": "/changelog/2.0.0-alpha.19"
+  },
+  "listPageLink": "/changelog/page/6"
+}

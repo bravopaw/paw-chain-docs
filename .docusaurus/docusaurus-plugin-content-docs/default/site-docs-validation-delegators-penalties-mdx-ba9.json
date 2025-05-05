@@ -1,0 +1,29 @@
+{
+  "id": "validation/Delegators/penalties",
+  "title": "Penalties",
+  "description": "Penalties",
+  "source": "@site/docs/validation/Delegators/Penalties.mdx",
+  "sourceDirName": "validation/Delegators",
+  "slug": "/validation/delegators/penalties",
+  "permalink": "/validation/delegators/penalties",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Delegators/Penalties.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "penalties",
+    "slug": "/validation/delegators/penalties",
+    "sidebar_label": "Penalties",
+    "description": "Penalties"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Unlock Periods",
+    "permalink": "/validation/delegators/unlock-periods"
+  },
+  "next": {
+    "title": "Validators and Lockers",
+    "permalink": "/validation/validators-and-lockers"
+  }
+}

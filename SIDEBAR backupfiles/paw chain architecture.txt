@@ -1,0 +1,19 @@
+        {
+          type: 'category',
+          label: 'PAW Chain Architecture',
+          link: {
+            type: 'generated-index',
+            title: 'Docusaurus Guides',
+            description:
+              "Let's learn about the most important Docusaurus concepts!",
+            keywords: ['Delegators'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            'architecture/layers',
+          ],
+        },
+
+
+
+//(full category)

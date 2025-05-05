@@ -1,0 +1,29 @@
+{
+  "id": "tokenomics/supply-and-distribution",
+  "title": "Supply & Distribution",
+  "description": "Supply & Distribution",
+  "source": "@site/docs/tokenomics/supply-and-distribution.mdx",
+  "sourceDirName": "tokenomics",
+  "slug": "/tokenomics/supply-and-distribution",
+  "permalink": "/tokenomics/supply-and-distribution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/tokenomics/supply-and-distribution.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "supply-and-distribution",
+    "slug": "/tokenomics/supply-and-distribution",
+    "sidebar_label": "Supply & Distribution",
+    "description": "Supply & Distribution"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Tokenomics",
+    "permalink": "/category/tokenomics"
+  },
+  "next": {
+    "title": "Treasury Management",
+    "permalink": "/category/treasury-management"
+  }
+}

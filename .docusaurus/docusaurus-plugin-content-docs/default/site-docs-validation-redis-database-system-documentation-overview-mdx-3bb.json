@@ -1,0 +1,29 @@
+{
+  "id": "validation/redis-database-system",
+  "title": "Redis Database System",
+  "description": "Redis Database System",
+  "source": "@site/docs/validation/Redis Database System Documentation Overview.mdx",
+  "sourceDirName": "validation",
+  "slug": "/validation/redis-database-system",
+  "permalink": "/validation/redis-database-system",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Redis Database System Documentation Overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "redis-database-system",
+    "slug": "/validation/redis-database-system",
+    "sidebar_label": "Redis Database System",
+    "description": "Redis Database System"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Validators and Lockers",
+    "permalink": "/validation/validators-and-lockers"
+  },
+  "next": {
+    "title": "Cross Stitching",
+    "permalink": "/validation/cross-stitching"
+  }
+}

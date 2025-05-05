@@ -1,0 +1,26 @@
+{
+  "permalink": "/changelog/2.0.0-alpha.19",
+  "source": "@site/changelog/source/2.0.0-alpha.19.md",
+  "title": "2.0.0-alpha.19",
+  "description": "- Add a sensible default for browserslist config.",
+  "date": "2019-06-07T20:00:00.000Z",
+  "tags": [],
+  "hasTruncateMarker": true,
+  "authors": [],
+  "frontMatter": {
+    "mdx": {
+      "format": "md"
+    },
+    "date": "2019-06-07T20:00"
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "2.0.0-alpha.20",
+    "permalink": "/changelog/2.0.0-alpha.20"
+  },
+  "nextItem": {
+    "title": "V2 Changelog",
+    "permalink": "/changelog/V2 Changelog"
+  },
+  "listPageLink": "/changelog/page/6"
+}

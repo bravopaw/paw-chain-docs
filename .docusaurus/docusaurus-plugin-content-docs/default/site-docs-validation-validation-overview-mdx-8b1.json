@@ -1,0 +1,29 @@
+{
+  "id": "validation/validation-overview",
+  "title": "Validation Overview",
+  "description": "Validation Overview",
+  "source": "@site/docs/validation/Validation Overview.mdx",
+  "sourceDirName": "validation",
+  "slug": "/validation/overview",
+  "permalink": "/validation/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Validation Overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "validation-overview",
+    "slug": "/validation/overview",
+    "sidebar_label": "Overview",
+    "description": "Validation Overview"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Redis-Powered Blockchain Ledger",
+    "permalink": "/techstack/redis-ledger"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/validation/overview"
+  }
+}

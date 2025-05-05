@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/chain/consensus",
+  "title": "Layers Introduction",
+  "description": "Consensus",
+  "source": "@site/docs/ecosystem/chain/Consensus.mdx",
+  "sourceDirName": "ecosystem/chain",
+  "slug": "/ecosystem/chain/consensus",
+  "permalink": "/ecosystem/chain/consensus",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/chain/Consensus.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "consensus",
+    "slug": "/ecosystem/chain/consensus",
+    "sidebar_label": "Consensus",
+    "description": "Consensus"
+  }
+}

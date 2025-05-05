@@ -1,0 +1,14 @@
+---
+id: penalties
+slug: /validation/delegators/penalties
+sidebar_label: Penalties
+description: Penalties
+---
+# Penalties
+
+PAW Chain implements a penalty system to encourage validators to maintain high uptime and network stability. Validators are fined for any downtime, which ensures the health and reliability of the network. Here’s how penalizations work:
+
+1. **Downtime Penalization**: Validators incur a fine of 1 billion PAW per hour of downtime. If a validator misses two penalty checkpoints (24 hours), they are temporarily banned, and they incur a fine of 10 billion PAW.
+2. **Consecutive Bans**: If a validator accumulates 10 consecutive bans, they face a 250 billion PAW fine and a 30-day suspension from the pending pool. After this suspension, they must re-enter the pending pool to be eligible for a validator position again.
+3. **Locker Penalties**: Lockers are also penalized for downtime. The fine for downtime is deducted from both the validator and the locker’s staked amounts.
+4. **Delegator Penalties**: If a validator is banned, delegators are subject to a 0.25% fine based on the entire pool. However, delegators are not penalized if their validator simply goes offline for a short period.

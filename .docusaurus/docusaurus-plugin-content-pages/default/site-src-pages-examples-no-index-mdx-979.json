@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/examples/noIndex",
+  "source": "@site/src/pages/examples/noIndex.mdx",
+  "title": "No Index Page example",
+  "description": "This page will not be indexed by search engines because it contains the page following page metadata markup:",
+  "frontMatter": {},
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/src/pages/examples/noIndex.mdx",
+  "unlisted": false
+}

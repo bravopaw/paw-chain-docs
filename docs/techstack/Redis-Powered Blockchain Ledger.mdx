@@ -1,0 +1,27 @@
+---
+id: redisledger
+slug: /techstack/redis-ledger
+sidebar_label: Redis-Powered Blockchain Ledger
+description: Redis-Powered Blockchain Ledger
+---
+
+# Redis-Powered Blockchain Ledger
+
+PAW Chain uses Redis data stores as it’s core blockchain ledger. The use of Redis allows for the last five blocks to be stored in memory, to ensure rapid access and quick confirmations, and let’s older blocks be stored on HDDs for long-term storage.
+
+It also employs edge routing to select validators with the lowest latency, further reducing response times and improving user experience.
+
+
+<figure style={{ textAlign: 'center' }}>
+  <img src="/img/redis.png" alt="Redis diagram" />
+  <figcaption style={{ fontSize: '0.9em', color: '#666' }}>
+    Redis Ledger per each validator
+  </figcaption>
+</figure>
+
+
+- When a user performs a task on PAWChain with an application, requiring validation, the application communicates to the master through the sentinels.
+- The master oversees the validation, and the Redis backup performs a backup of the masters logs.
+- If the sentinels see that the master fails, they promote a slave as the new master.
+- The backup loads the memory of the old master to the new master, and validations continue through the new master.
+- Each slave is monitored against the master to ensure no dissimilarity is detected.

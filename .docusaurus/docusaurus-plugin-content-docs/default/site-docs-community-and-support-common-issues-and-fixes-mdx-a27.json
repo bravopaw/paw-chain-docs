@@ -1,0 +1,29 @@
+{
+  "id": "community-and-support/common-issues-and-fixes",
+  "title": "Common Issues and Fixes",
+  "description": "Common Issues and Fixes",
+  "source": "@site/docs/community-and-support/common-issues-and-fixes.mdx",
+  "sourceDirName": "community-and-support",
+  "slug": "/community-and-support/common-issues-and-fixes",
+  "permalink": "/community-and-support/common-issues-and-fixes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/community-and-support/common-issues-and-fixes.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "common-issues-and-fixes",
+    "slug": "/community-and-support/common-issues-and-fixes",
+    "sidebar_label": "Common Issues and Fixes",
+    "description": "Common Issues and Fixes"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "PAW Chain FAQ",
+    "permalink": "/community-and-support/paw-chain-faq"
+  },
+  "next": {
+    "title": "PAW Chain Glossary",
+    "permalink": "/community-and-support/paw-chain-glossary"
+  }
+}

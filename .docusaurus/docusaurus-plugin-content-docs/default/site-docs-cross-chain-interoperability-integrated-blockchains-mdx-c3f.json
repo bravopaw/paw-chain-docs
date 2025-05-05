@@ -1,0 +1,29 @@
+{
+  "id": "Cross-chain Interoperability/Integrated Blockchains",
+  "title": "Integrated Blockchains",
+  "description": "This tutorial will walk you through the basics of the Docusaurus i18n system.",
+  "source": "@site/docs/Cross-chain Interoperability/Integrated Blockchains.mdx",
+  "sourceDirName": "Cross-chain Interoperability",
+  "slug": "/cross-chain-interoperability/Integrated-Blockchains",
+  "permalink": "/cross-chain-interoperability/Integrated-Blockchains",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/Cross-chain Interoperability/Integrated Blockchains.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "Integrated Blockchains",
+    "description": "This tutorial will walk you through the basics of the Docusaurus i18n system.",
+    "slug": "/cross-chain-interoperability/Integrated-Blockchains",
+    "sidebar_label": "Integrated Blockchains"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Cross-Chain Interoperability",
+    "permalink": "/category/cross-chain-interoperability"
+  },
+  "next": {
+    "title": "Universal Protocols and Bridges",
+    "permalink": "/cross-chain-interoperability/Universal-Protocols-and-Bridges"
+  }
+}

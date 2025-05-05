@@ -1,0 +1,121 @@
+---
+id: cross-stitching
+slug: /validation/cross-stitching
+sidebar_label: Cross Stitching
+description: Cross Stitching
+---
+
+# Cross Stitching
+
+## Cross Stitching - Blockchain Architecture Comparison and Security Explanation
+
+PAW Chain’s Cross Stitching architecture introduces a hybrid rotational model improving on traditional validator systems, by enforcing multi-phase validation, randomized validator selection at each phase, and validator cross-linking blocks to prevent manipulation.
+
+### Pre-Block Verification
+
+Before a block is proposed, two validators from different levels are selected randomly to verify the transaction data and block conditions. The validators who verify pre-block data cannot be the same validators who propose the block, to prevent validators from proposing invalid blocks that they themselves have pre-approved. This separation increases security as the validators have no incentive to pass invalid data. If a malicious validator verifies bad data, they would not be allowed to submit the block, and it would be rejected by the proposer.
+
+### Block Submission (Proposal and Consensus)
+
+Once pre-block verification is completed, three validators are selected to propose and submit the block. These validators are once again randomly chosen, with at most one overlapping validator from the previous stage to maintain continuity.
+
+PAW Chain’s approach enforces proposers are unable to act alone. They must submit the block and undergo confirmation by other validators. Additionally, proposers are linked across blocks, meaning validators from the previous block partially influence the next block’s verification.
+
+This structure reduces the risk of a single proposer manipulating a block, as final block acceptance depends on independent validators who were not involved in the initial block creation.
+
+### Post-Block Verification
+
+After a block is submitted and recorded, two new validators, distinct from the proposers, are randomly selected to re-verify the recorded block data. This immediate post-block verification prevents invalid blocks locking into the chain, having not been independently reviewed.
+
+Malicious attackers would have to compromise validators across both the block submission phase and the post-verification phase - randomly selected validators who change every block - making coordinated attacks highly unlikely.
+
+### Security Advantages of Cross Stitching
+
+1. Each block is verified twice: once before it is proposed, and again after it is recorded. This redundancy drastically lowers the chance of a bad block being added to the chain.
+2. Validator roles are separated. A validator that checks data cannot propose the block, and proposers cannot finalize their own blocks, preventing validators from collusion.
+3. Validator selections are randomized at every phase. No validator knows in advance if they will be selected for verification or proposal, making bribery and planning attacks difficult.
+4. The cross-linking of validators across blocks means an attacker would need to compromise validators across multiple blocks in a row to cause damage. A feat far more difficult than attacking a single block or a single moment in time.
+5. The built-in penalty mechanisms - the penalization of inactive or malicious validators -  further incentivizes honest participation.
+
+### Security and Consensus Benefits of Scaling
+
+1. Enhanced Randomization
+With a larger validator pool, random selection becomes harder to predict or manipulate, drastically increasing security against coordinated attacks.
+2. Higher Parallel Transaction Handling
+More validators per phase allow transaction pools to be processed in parallel, significantly boosting throughput without sacrificing double-verification and consensus integrity.
+3. Validator Rotation and Diversity
+Increased validator counts allow for rapid rotation between blocks. Validators participating in one block’s pre-check phase may participate in another block’s post-check phase, maintaining the cross-linked security principle while distributing workload more evenly.
+4. Improved Fault Tolerance
+Should any validator become unresponsive or malicious, the larger pool provides immediate redundancy, allowing block validation to proceed without disruption.
+5. Dynamic Scaling and Sharding Compatibility
+The validator pool can be divided dynamically into multiple validation groups ("lanes"), where each group handles a different set of transactions using Cross Stitching rules independently. This supports horizontal scalability without restructuring the protocol.
+
+### Overall Architectural Differences
+
+Cross Stitching differs from traditional PoS or DPoS
+
+- Pre-block checks similar to PBFT, but separates pre-validators from proposers to prevent self-confirmation.
+- Block submission like Proof of Stake and DPoS chains, but adds randomization and validator rotation to minimize proposer power.
+- Post-block finalization similar to Casper FFG and Avalanche but does so immediately with a small group for enhanced speed and redundancy.
+- Cross-block validator linking, ensuring each block’s validators are connected to the next and previous blocks.
+
+## Scaling Cross Stitching with Increased Validators for Higher TPS
+
+### Baseline Structure of Cross Stitching
+
+In the Cross Stitching model, each block is processed through three distinct validator stages:
+
+1. **Pre-Block Verification:** `2 validators` independently `verify transaction data` before the block proposal.
+2. **Block Submission and Consensus:** `3 validators` are selected to propose and `validate the block.`
+3. **Post-Block Verification:** `2 validators` independently `verify the block` after it is committed to the chain.
+
+This involves a total of 5 validators per block under standard operation, ensuring each block is double-confirmed, with validator roles randomized and separated.
+
+### Scaling Strategy: Increasing Validators Per Phase
+
+As transaction volume grows, Cross Stitching can scale naturally by increasing the number of validators involved at each validation phase, without altering the core structure of the system.
+
+Example of Scaled Setup:
+
+- **Pre-Block Verification:** `5 validators`
+- **Block Submission:** `7 validators`
+- **Post-Block Verification:** `5 validators`
+- **Total validators involved per block:** `12`
+
+Each validator handles a portion of the verification workload, enabling the system to process a high number of transactions per block.
+
+The steps remain identical:
+`Pre-Check >  Submit >  Post-Check`
+However, the validation capacity per step expands as the validator set increases.
+
+### Impact on Transactions Per Second (TPS)
+
+Scaling validator participation proportionally increases potential TPS capacity:
+
+- **More Pre-Check Validators:** Faster filtering and validation of incoming transactions.
+- **More Submission Validators:** Larger blocks can be proposed and finalized securely.
+- **More Post-Check Validators:** Higher assurance and faster confirmation finality.
+
+As the number of validators increases, each validator's individual load per transaction decreases, allowing the network to handle more transactions simultaneously while maintaining strong double-verification and consensus integrity.
+
+**Example TPS Impact:**
+
+`5 validators = 500–1000 TPS`
+
+`50 validators = 10,000 - 20,000 TPS`
+
+`500 validators = 100,000 + TPS` (with parallel validation lanes)
+
+PAW Chain is able to scale to enterprise-grade transaction levels while maintaining Cross Stitching's security guarantees.
+
+### Cross Stitching Security During Scaling
+
+As the system scales:
+
+- Pre-Block and Post-Block verification continues independently.
+- Validator roles always randomized at every phase.
+- Cross-linking of blocks is preserved.
+
+Malicious actors would need to compromise multiple validators across multiple phases and timeframes to attempt block manipulation, exponentially increasing both cost and difficulty of attacks, as validator numbers increase.
+
+Increasing validators per step strengthens security, enhances decentralization, and allows seamless scaling to meet future demand while maintaining the underlying principles of Cross Stitching.

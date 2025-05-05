@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/chain/infinite-scaling",
+  "title": "Infinite Scaling",
+  "description": "Infinite Scaling",
+  "source": "@site/docs/ecosystem/chain/Infinite Scaling.mdx",
+  "sourceDirName": "ecosystem/chain",
+  "slug": "/ecosystem/chain/infinite-scaling",
+  "permalink": "/ecosystem/chain/infinite-scaling",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/chain/Infinite Scaling.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "infinite-scaling",
+    "slug": "/ecosystem/chain/infinite-scaling",
+    "sidebar_label": "Infinite Scaling",
+    "description": "Infinite Scaling"
+  }
+}

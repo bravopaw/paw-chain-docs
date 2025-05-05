@@ -1,0 +1,29 @@
+{
+  "id": "validation/validator-architecture",
+  "title": "Validator Architecture",
+  "description": "PAW Validator Architecture",
+  "source": "@site/docs/validation/PAW Validator Architecture.mdx",
+  "sourceDirName": "validation",
+  "slug": "/validation/validator-architecture",
+  "permalink": "/validation/validator-architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/PAW Validator Architecture.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "validator-architecture",
+    "slug": "/validation/validator-architecture",
+    "sidebar_label": "PAW Validator Architecture",
+    "description": "PAW Validator Architecture"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Validator-Driven Block Sizes",
+    "permalink": "/validation/validator-driven-block-sizes"
+  },
+  "next": {
+    "title": "Consensus & Selection Mechanism",
+    "permalink": "/validation/proposer-consensus-and-selection-mechanism"
+  }
+}

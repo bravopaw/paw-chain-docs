@@ -1,0 +1,64 @@
+---
+id: redis-database-system
+slug: /validation/redis-database-system
+sidebar_label: Redis Database System
+description: Redis Database System
+---
+
+# Redis Database System
+
+The Redis database system is designed for high availability, scalability, and resilience, utilizing a robust architecture comprising a master-slave replication model, automated backups, and Redis Sentinel for automatic failover management.
+
+### Architecture Components
+
+**1. Application Service (App)**
+- Connects directly to the Redis Master node for performing all write operations.
+- Connects to Redis Slave nodes primarily to perform read operations, distributing load efficiently and improving read performance.
+
+**2. Redis Master**
+- Central node responsible for handling all write operations and storing the primary dataset.
+- Replicates data changes to all connected slave nodes to maintain data consistency.
+- Managed by Redis Sentinel for monitoring and failover protection.
+
+**3. Redis Slave Nodes (Slave 1-4)**
+- Replicate data continuously from the Redis Master, keeping data synchronized.
+- Handle read requests from the application, significantly reducing read load on the Redis Master.
+- Eligible for automatic promotion to master by Redis Sentinel in case of the current master's failure.
+
+**4. Redis Sentinel (Sentinel 1-3)**
+- Continuously monitor the Redis Master for availability and health.
+- Automatically initiate a failover process, selecting one of the slave nodes to promote as the new master if the original master becomes unavailable.
+- Ensure minimal downtime and enhance fault tolerance.
+
+**5. Backup Service**
+- Regularly executes automated backups of the Redis Master's data.
+- Provides a safeguard against data loss and enables rapid recovery in disaster scenarios.
+
+### Workflow
+
+- The application sends write requests exclusively to the Redis Master.
+- The master processes and replicates these changes to slave nodes asynchronously.
+- The application utilizes Redis Slave nodes for read operations, balancing load and improving responsiveness.
+- Redis Sentinel monitors the master's availability, and upon detection of a master failure, it automatically promotes one of the slave nodes to become the new master.
+- Backups are regularly scheduled, ensuring data safety and quick recovery.
+
+### Failover Process
+
+- Redis Sentinel continuously monitors the health and availability of the Redis Master node.
+- If the Sentinel nodes detect that the master has become unresponsive, they collaborate to elect a new master from among the available Redis Slave nodes.
+- This elected slave node is promoted automatically, becoming the new Redis Master, ensuring minimal downtime and seamless continuity of operations.
+- The other slave nodes reconfigure themselves to replicate data from the newly promoted master.
+
+### Benefits
+
+- High Availability: Continuous replication and automated failover eliminate single points of failure.
+- Scalability: Slave nodes distribute read operations, enabling the system to scale horizontally.
+- Fault Tolerance: Automatic failover through Redis Sentinel reduces downtime.
+- Data Durability: Regular automated backups protect against data loss.
+
+<figure style={{ textAlign: 'center' }}>
+  <img src="/img/redis.png" alt="Redis diagram" />
+  <figcaption style={{ fontSize: '0.9em', color: '#666' }}>
+    This architecture ensures a highly resilient and maintainable Redis database environment, suitable for demanding production workloads
+  </figcaption>
+</figure>

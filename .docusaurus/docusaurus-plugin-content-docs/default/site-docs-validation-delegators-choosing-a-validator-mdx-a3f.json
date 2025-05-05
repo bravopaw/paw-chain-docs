@@ -1,0 +1,29 @@
+{
+  "id": "validation/Delegators/choosing-a-validator",
+  "title": "Choosing a Validator",
+  "description": "Choosing a Validator",
+  "source": "@site/docs/validation/Delegators/Choosing a Validator.mdx",
+  "sourceDirName": "validation/Delegators",
+  "slug": "/validation/delegators/choosing-a-validator",
+  "permalink": "/validation/delegators/choosing-a-validator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Delegators/Choosing a Validator.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "choosing-a-validator",
+    "slug": "/validation/delegators/choosing-a-validator",
+    "sidebar_label": "Choosing a Validator",
+    "description": "Choosing a Validator"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Delegators",
+    "permalink": "/category/delegators"
+  },
+  "next": {
+    "title": "Delegation Yield",
+    "permalink": "/validation/delegators/delegation-yield"
+  }
+}

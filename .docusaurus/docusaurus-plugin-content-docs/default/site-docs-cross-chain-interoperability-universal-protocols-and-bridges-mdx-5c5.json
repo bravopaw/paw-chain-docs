@@ -1,0 +1,30 @@
+{
+  "id": "Cross-chain Interoperability/Universal Protocols and Bridges",
+  "title": "Universal Protocols and Bridges",
+  "description": "Universal Protocols and Bridges",
+  "source": "@site/docs/Cross-chain Interoperability/Universal Protocols and Bridges.mdx",
+  "sourceDirName": "Cross-chain Interoperability",
+  "slug": "/cross-chain-interoperability/Universal-Protocols-and-Bridges",
+  "permalink": "/cross-chain-interoperability/Universal-Protocols-and-Bridges",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/Cross-chain Interoperability/Universal Protocols and Bridges.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "Universal Protocols and Bridges",
+    "slug": "/cross-chain-interoperability/Universal-Protocols-and-Bridges",
+    "sidebar_label": "Universal Protocols and Bridges",
+    "description": "Universal Protocols and Bridges",
+    "toc_max_heading_level": 4
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Integrated Blockchains",
+    "permalink": "/cross-chain-interoperability/Integrated-Blockchains"
+  },
+  "next": {
+    "title": "Technology Stack",
+    "permalink": "/category/technology-stack"
+  }
+}

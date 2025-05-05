@@ -1,0 +1,30 @@
+{
+  "id": "Connecting to PAW Swap",
+  "title": "Connecting to PAW Swap",
+  "description": "How to install and configure PAW Chain",
+  "source": "@site/docs/Connecting to PAW Swap.mdx",
+  "sourceDirName": ".",
+  "slug": "/connecting-to-paw-swap",
+  "permalink": "/connecting-to-paw-swap",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/Connecting to PAW Swap.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "Connecting to PAW Swap",
+    "title": "Connecting to PAW Swap",
+    "sidebar_label": "Connecting to PAW Swap",
+    "description": "How to install and configure PAW Chain",
+    "slug": "/connecting-to-paw-swap"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "How to Obtain $PAW",
+    "permalink": "/how-to-obtain-paw"
+  },
+  "next": {
+    "title": "Technology Overview",
+    "permalink": "/category/technology-overview"
+  }
+}

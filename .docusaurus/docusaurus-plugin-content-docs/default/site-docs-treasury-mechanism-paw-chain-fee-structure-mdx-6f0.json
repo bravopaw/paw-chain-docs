@@ -1,0 +1,29 @@
+{
+  "id": "treasury-mechanism/paw-chain-fee-structure",
+  "title": "PAW Chain Fee Structure",
+  "description": "PAW Chain Fee Structure",
+  "source": "@site/docs/treasury-mechanism/paw-chain-fee-structure.mdx",
+  "sourceDirName": "treasury-mechanism",
+  "slug": "/treasury-mechanism/paw-chain-fee-structure",
+  "permalink": "/treasury-mechanism/paw-chain-fee-structure",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/treasury-mechanism/paw-chain-fee-structure.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "paw-chain-fee-structure",
+    "slug": "/treasury-mechanism/paw-chain-fee-structure",
+    "sidebar_label": "PAW Chain Fee Structure",
+    "description": "PAW Chain Fee Structure"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Treasury Management",
+    "permalink": "/category/treasury-management"
+  },
+  "next": {
+    "title": "Community and Support",
+    "permalink": "/category/community-and-support"
+  }
+}

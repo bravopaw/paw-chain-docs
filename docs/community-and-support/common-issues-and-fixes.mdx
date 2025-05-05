@@ -1,0 +1,52 @@
+---
+id: common-issues-and-fixes
+slug: /community-and-support/common-issues-and-fixes
+sidebar_label: Common Issues and Fixes
+description: Common Issues and Fixes
+---
+
+# Common Issues and Fixes
+
+# Frequently Asked Questions
+
+###  I am unable to access my PAW Wallet
+
+PAW Wallet uses BIP-39 standard for generating seed phrases for each unique wallet. This 12 word seed phrase is case sensitive. Make sure you are not capitalizing the first letter of each word, especially when using a mobile device.
+
+Additionally, after entering the first four letters of each word of your seed phrase, PAW Wallet will automatically fill out the rest of the word. Be sure to only type the first 4 letters, as to not misspell your seed phrase.
+
+Make sure you are entering your password correctly, including a capital letter, a lower case letter, and a special character. If you need to reset your password, simply use "Recover PAW Wallet" and enter your seed phrase.
+
+### I cannot see any tokens that I would like to swap
+
+If you cannot see any tokens to swap on PAW Swap or PAW Wallet, make sure you have connected an external wallet. You can connect your wallet by clicking the blue button at the top of the page that says "connect wallet".
+
+### I cannot search for a specific token that I would like to swap
+
+If you cannot find a specific token to swap on PAW Wallet or PAW Swap, make sure you are on the correct network. You can change networks in PAW Wallet by clicking the network button at the top of the page next to your PAW Wallet address. You can change networks in PAW Swap by clicking the network button at the top of the page next to your connected wallet address.
+
+Check PAW Scanner to see if a liquidity pair has been created for the specific token, and to see on which networks a specific token is available.
+
+### I cannot bridge my tokens
+
+PAW Wallet allows one free bridge-in to allow PAW Coins be added to the wallet in order to cover any future swap or bridge fees. If you do not bridge-in enough PAW with your first bridge, you can create a new PAW Wallet, and bridge enough to cover the required fees, and send to your original PAW Wallet (gas free).
+
+If you still have trouble bridging in or out of PAW Wallet, make sure you have connected the external wallet from which you would like to bridge-in, or which you would like to bridge-out.
+
+Additionally, each bridge requires an approval before being able to bridge. Make sure you are completing both the bridge approval and actual bridge.
+
+Remember, there is currently a 12 hour delay, recommended by CertiK, for all bridge-outs. After the 12 hour delay, your assets will arrive in the wallet to which you bridged-out.
+
+### My transaction on PAW Swap has not arrived in my wallet
+
+If the token you swapped for on the external swap has not arrived in your connected wallet, it may have been flagged for a review. This flagging happens periodically and at random. You can check on the status of your swap by clicking “check status” on the swap page.  If one of the two transactions on the check status page is still executing, it may have been flagged, and will complete after a few minutes.
+
+# Additional Notes
+
+- To ensure quality performance of PAW utilities, make sure to maintain a stable internet connection, and stay on the page in use during a swap until it has completed.
+
+- If you are trading a fast moving token with a high amount of volume, you may need to increase your slippage tolerance (as there are no MEV bots on PAW Chain, you will not need to worry about front running from MEV bots, slippage on PAWWallet only adjusts the change in market cap tolerance)
+
+- If you are using a mobile device, always connect to the PAW Swap or PAW Wallet with your EVM/SVM wallets built in browser
+
+- All processing fees on PAW Chain are paid in PAW, if you are on PAW Wallet, you will need to reserve PAW for any bridge out or swap processing fees. Each PAW Wallet gets one free bridge-in for PAW to be sent to the wallet to cover the costs of future processing fees.

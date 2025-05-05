@@ -1,0 +1,99 @@
+//(full category:)  
+
+
+
+  {
+      type: 'category',
+      label: 'Ecosystem Features',
+      link: {
+        type: 'generated-index',
+        title: 'Docusaurus Guides',
+        description:
+          "Let's learn about the most important Docusaurus concepts!",
+        keywords: ['Ecosystem'],
+        image: '/img/docusaurus.png',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'PAW Chain',
+          link: {
+            type: 'generated-index',
+            title: 'Docusaurus Guides',
+            description:
+              "Let's learn about the most important Docusaurus concepts!",
+            keywords: ['Delegators'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'ecosystem/chain/consensus',
+              label: 'Consensus',
+            },
+            {
+              type: 'doc',
+              id: 'ecosystem/chain/infinite-scaling',
+              label: 'Infinite Scaling',
+            },
+            {
+              type: 'doc',
+              id: 'ecosystem/chain/liquidity-provisioning',
+              label: 'Liquidity Provisioning',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PAW Wallet',
+          link: {
+            type: 'generated-index',
+            title: 'Docusaurus Guides',
+            description:
+              "Let's learn about the most important Docusaurus concepts!",
+            keywords: ['Delegators'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'ecosystem/wallet/how-it-works-wallet',
+              label: 'How It Works',
+            },
+            {
+              type: 'doc',
+              id: 'ecosystem/wallet/multi-asset-wallet-features',
+              label: 'Multi-Asset Wallet Features',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PAW Swap',
+          link: {
+            type: 'generated-index',
+            title: 'Docusaurus Guides',
+            description:
+              "Let's learn about the most important Docusaurus concepts!",
+            keywords: ['Delegators'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'ecosystem/swap/how-it-works-swap',
+              label: 'How It Works',
+            },
+            {
+              type: 'doc',
+              id: 'ecosystem/swap/paw-swap-lite',
+              label: 'PAW Swap Lite',
+            },
+          ],
+        },
+      ],
+    },
+
+
+
+

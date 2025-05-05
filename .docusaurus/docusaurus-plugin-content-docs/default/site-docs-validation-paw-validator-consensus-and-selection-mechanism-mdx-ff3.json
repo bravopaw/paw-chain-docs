@@ -1,0 +1,29 @@
+{
+  "id": "validation/proposer-consensus-and-selection-mechanism",
+  "title": "Proposer Consensus and Selection Mechanism",
+  "description": "Consensus & Selection Mechanism",
+  "source": "@site/docs/validation/PAW Validator Consensus and Selection Mechanism.mdx",
+  "sourceDirName": "validation",
+  "slug": "/validation/proposer-consensus-and-selection-mechanism",
+  "permalink": "/validation/proposer-consensus-and-selection-mechanism",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/PAW Validator Consensus and Selection Mechanism.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "proposer-consensus-and-selection-mechanism",
+    "slug": "/validation/proposer-consensus-and-selection-mechanism",
+    "sidebar_label": "Consensus & Selection Mechanism",
+    "description": "Consensus & Selection Mechanism"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "PAW Validator Architecture",
+    "permalink": "/validation/validator-architecture"
+  },
+  "next": {
+    "title": "Delegators",
+    "permalink": "/category/delegators"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/swap/how-it-works-swap",
+  "title": "How PAW Swap Works",
+  "description": "How It Works",
+  "source": "@site/docs/ecosystem/swap/How It Works.mdx",
+  "sourceDirName": "ecosystem/swap",
+  "slug": "/ecosystem/swap/how-it-works",
+  "permalink": "/ecosystem/swap/how-it-works",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/swap/How It Works.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "how-it-works-swap",
+    "slug": "/ecosystem/swap/how-it-works",
+    "sidebar_label": "How It Works",
+    "description": "How It Works"
+  }
+}

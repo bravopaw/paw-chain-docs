@@ -1,0 +1,30 @@
+{
+  "id": "Supported Wallets",
+  "title": "Supported Wallets",
+  "description": "Supported Wallets",
+  "source": "@site/docs/supported-wallets.mdx",
+  "sourceDirName": ".",
+  "slug": "/supported-wallets",
+  "permalink": "/supported-wallets",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/supported-wallets.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "Supported Wallets",
+    "title": "Supported Wallets",
+    "sidebar_label": "Supported Wallets",
+    "description": "Supported Wallets",
+    "slug": "/supported-wallets"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Accessing PAW Chain Mainnet",
+    "permalink": "/accessing-paw-chain-mainnet"
+  },
+  "next": {
+    "title": "How to Obtain $PAW",
+    "permalink": "/how-to-obtain-paw"
+  }
+}

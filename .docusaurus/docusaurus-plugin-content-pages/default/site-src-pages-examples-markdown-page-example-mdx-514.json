@@ -1,0 +1,14 @@
+{
+  "type": "mdx",
+  "permalink": "/examples/markdownPageExample",
+  "source": "@site/src/pages/examples/markdownPageExample.mdx",
+  "title": "Markdown Page example",
+  "description": "Markdown Page example",
+  "frontMatter": {
+    "title": "Markdown Page example",
+    "description": "Markdown Page example",
+    "wrapperClassName": "docusaurus-markdown-example"
+  },
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/src/pages/examples/markdownPageExample.mdx",
+  "unlisted": false
+}

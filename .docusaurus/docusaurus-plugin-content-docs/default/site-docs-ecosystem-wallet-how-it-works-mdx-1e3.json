@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/wallet/how-it-works-wallet",
+  "title": "How PAW Wallet Works",
+  "description": "How It Works",
+  "source": "@site/docs/ecosystem/wallet/How It Works.mdx",
+  "sourceDirName": "ecosystem/wallet",
+  "slug": "/ecosystem/wallet/how-it-works",
+  "permalink": "/ecosystem/wallet/how-it-works",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/wallet/How It Works.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "how-it-works-wallet",
+    "slug": "/ecosystem/wallet/how-it-works",
+    "sidebar_label": "How It Works",
+    "description": "How It Works"
+  }
+}

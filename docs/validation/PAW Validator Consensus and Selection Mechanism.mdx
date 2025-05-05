@@ -1,0 +1,183 @@
+---
+id: proposer-consensus-and-selection-mechanism
+slug: /validation/proposer-consensus-and-selection-mechanism
+sidebar_label: Consensus & Selection Mechanism
+description: Consensus & Selection Mechanism
+---
+
+# Proposer Consensus and Selection Mechanism
+
+:::info
+
+**Who is a Proposer?**
+
+The Proposer is a validator with the highest number of stake amounts.
+
+:::
+
+:::info
+
+**What is the role of the Proposer?**
+
+In the proposer selection process, validators with the highest staked amounts have the highest probability of being selected as the proposer. When a validator is chosen, the system first checks whether the validator is active:
+
+:::
+
+
+
+## Selection Process of the Proposer for the Transaction
+
+### **New Validator Selection Process and Reward/Penalty Calculations**
+
+The updated validator selection and reward/penalty calculation process consists of two main parts:
+
+1. Validator Selection and Reward/Penalty Calculation (Wallet Side)
+2. Transaction Validation (PAW Validator Application Side)
+
+### **1. Validator Selection and Reward/Penalty Calculation (Wallet Side)**
+
+### **Step 1: Selecting 5 Validators**
+
+### **Weighted Random Selection of a Validator**
+
+The selection process is based on the **staked amounts** of validators, ensuring that those with higher stakes have a greater probability of being chosen. The function then enters a loop to randomly select validators based on their weight.
+
+- **Calculate Total Staked Value**
+- Sum the staked amounts of all available validators.
+- This total defines the probability distribution for selection.
+- **Generate a Weighted Random Number**
+- A random number is generated in the range 0 to total staked value.
+- **Iterate Through Validators for Selection**
+- The function iterates through the list of validators, subtracting each validator’s staked amount from the random number.
+- The process continues until the random number reaches zero or becomes negative.
+- The validator at this point is selected, ensuring that validators with higher stakes have a higher chance of being chosen.
+- The function selects up to 5 validators for the transaction based on their staked amount.
+- If fewer than 5 validators are available, the process continues with the available validators.
+- The higher the staked amount, the greater the chance of being selected.
+
+### **Step 2: Reward and Penalty Calculation**
+
+For the selected validators, reward and penalty are calculated based on their staked amount:
+
+1. Get the total staked amount of all selected validators.
+2. Calculate each validator’s stake percentage relative to the total stake.
+3. Take 80% of the validators' potion from the processing fee as the total pool for reward/penalty
+4. Distribute the reward and penalty among validators based on their stake percentage.
+
+### *Example Calculation:*
+
+- *Processing Fee = $100*
+- *80% of Processing Fee = $80*
+- *Selected Validators and Stakes:*
+    - *Validator A → 15,000*
+    - *Validator B → 14,000*
+    - *Validator C → 3,000*
+    - *Validator D → 2,000*
+    - *Validator E → 500*
+- *Total Stake = 34,500*
+- *Each Validator's Reward/Penalty Calculation:*
+    - *Stake Percentage = (Validator's Stake / Total Stake) * 100*
+    - *Reward/Penalty = 80% Processing Fee * Stake Percentage*
+
+### **Step 3: Checking Validator Activity**
+
+- Each selected validator is checked for activity.
+- If the validator is inactive:
+    - The validator receives the calculated penalty and is removed from the selection.
+    - If the validator has lockers, each locker also receives a proportional penalty.
+- If the validator is active:
+    - The validator remains in the selection process.
+
+### **Step 4: Finalizing Active Validators**
+
+- Only active validators are sent back to complete the transaction.
+
+### **2. Transaction Validation (PAW Validator Application Side)**
+
+### **Step 5: Receiving the Transaction and Assigning Roles**
+
+- The validator with the highest stake from the selected list is assigned as the **Proposer**.
+- The remaining selected validators become **Verifiers**, responsible for validating the transaction.
+
+### **Step 6: Hash Generation and Verification**
+
+1. Proposer creates a SHA-256 hash of the transaction and broadcasts it to the verifiers.
+2. Verifiers compare the received hash with their own hash that is generated from the same transaction data.
+3. Each verifier submits a vote:
+    - If the hash matches, they vote "equal".
+    - If the hash does not match, they vote "not equal".
+
+### **Step 7: Consensus-Based Validation**
+
+- The majority decision determines the transaction status.
+- If the number of "equal" votes exceeds "not equal" votes, the transaction is successfully validated.
+- Otherwise, validation fails.
+- Any verifier that submits an incorrect hash (not matching the consensus) receives a penalty.
+
+### **Step 8: Final Response to PAW Chain Node**
+
+- The validation result (success or failure) is sent back to the PAW Chain Node.
+
+## Transaction Validation Process
+
+The selected validator, known as the **"Proposer",** sends the encrypted hash to the remaining validators. Each time a transaction occurs, the PAW Chain Node securely processes and transmits data to the validators using FERNET encryption. The process is as follows:
+
+- Each time a transaction happens, the 5 selected validators for the transaction are identified.
+- The selected validators' details are merged with the transaction dataset. This ensures all necessary information is included for validation.
+- The combined data is encoded using FERNET encryption, providing a secure way to transfer sensitive information.
+- The FERNET-encrypted transaction data is transmitted to the validator application for processing.
+
+Each validator compares the received hash with their own hash from the wallet. If the hashes match, they send a confirmation response.
+
+The process is validated based on majority consensus.
+
+- For example, let us assume there are four validators including the proposer, among the four validators, if two validators' hashes match the proposer's hash while one does not, the ratio becomes 3:1, indicating a successful validation.
+
+Once validation is successful, the data is saved in the database, and a confirmation message appears on the wallet side, stating
+
+**"Transaction Successful"**
+
+# Penalty Mechanism for Inactive Validators
+
+## How Penalty Works?
+
+The Penalty mechanism ensures the availability of the proposer. If the proposer is not available, that validator is given the penalty.
+
+During each transaction, a validator is chosen based on probability rather than randomness. To be eligible as a proposer, a validator must have a minimum stake amount of **1 trillion**. The validator with the highest stake is prioritized as the proposer.
+
+Once a proposer is selected, the system checks their status:
+
+- If the proposer is inactive, a penalty is applied.
+
+The penalty calculation is as follows:
+
+- 80% of the processing fee will be added as the validator's penalty.
+- The lockers will receive penalties based on their contribution.
+- Processing Fee of the transaction is used for adding penalties.
+- The same amount as the validator's portion of the processing fee is deducted from the staked amount.
+- If the proposer has existing penalties, the new penalty is added to the total
+
+Processing fee is used to calculate the penalty for the deduction and and applied to both validators and lockers as follows:
+
+**Applying Penalty to the Validator**
+- If the validator already has an existing penalty, the current processing fee is added to the previous penalty.
+- If the validator has no previous penalty, the processing fee is assigned as the penalty.
+- Applying Penalty to Lockers
+  - Since lockers help fulfill the stake gap for validators, they also share the penalty proportionally. The process follows these steps:
+-  **Calculate the stake gap (balance value):**
+
+ `balanceValue = Validator_Stake_Limit - main validator’s staked amount`
+
+- **Determine each locker’s percentage contribution to the stake gap:**
+
+ `lockerPercentage = (locker’s staked amount / balanceValue) x 100`
+
+- **Calculate the locker’s penalty amount**
+
+ `lockerNewPenalty = (delagatorPercentage / 100) x penaltyFee (processingFee)`
+
+- **Update the locker’s total penalty**
+
+ `lockerPenalty = previousPenalty + lockerNewPenalty`
+
+- This ensures that penalties are **fairly distributed** among lockers based on their stake

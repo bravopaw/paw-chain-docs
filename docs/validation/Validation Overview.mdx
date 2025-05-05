@@ -1,0 +1,34 @@
+---
+id: validation-overview
+slug: /validation/overview
+sidebar_label: Overview
+description: Validation Overview
+---
+
+# Validation Overview
+
+PAW Wallet is designed to manage the crucial process of handling transactions securely and efficiently, with a streamlined system involving a validator application, a Mempool repository, and a series of procedural steps to ensure transactions are processed accurately. This document provides a detailed explanation of the PAW Wallet validator system, outlining how transactions are initiated, validated and recorded on the blockchain.
+
+## Overview of the PAW Wallet Transaction Flow
+
+### The PAW Wallet transaction process involves several key stages: initiating a transaction, validating it, and updating the blockchain:
+
+1. **Initiate Transaction:** When a user sends a transaction request, the data is first stored temporarily in a Mempool. Unlike other blockchains, transactions in the PAW  Mempool are “pre confirmed” meaning a user can’t even attempt to double spend their funds, due to the balance updating immediately to show the funds spent at time of submission.  A validator is then selected based on their staked amount, along with other factors such as ping and location.
+
+2. **Validator Processing:** The selected validator network checks the transaction data, updates the ledger and blockchain, and sends a response back to PAW Chain.
+
+3. **Update and Synchronize:** Depending on the outcome of the validation, the blockchain is either updated, or any failures are recorded. The system then synchronizes with the validator to keep current.
+
+| Component | Recommended Requirement |
+| --- | --- |
+| CPU | 8 cores / 16 threads, modern processor (e.g., `AMD Ryzen 9` / `Intel Xeon)` |
+| RAM | 48 GB RAM |
+| Storage | 2 TB NVMe SSD (`Gen4 preferred`) for validator ledger system |
+| Network | Minimum 1 Gbps bandwidth (up/down) |
+| Operating System | `Ubuntu 20.04 LTS` or higher / `Windows 11 Pro` or `Windows Server 2022` |
+
+:::info
+
+The above hardware requirement specifications apply for both local and hosted servers.
+
+:::

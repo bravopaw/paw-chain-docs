@@ -1,0 +1,29 @@
+{
+  "id": "validation/Delegators/delegation-yield",
+  "title": "Delegation Yield",
+  "description": "Delegation Yield",
+  "source": "@site/docs/validation/Delegators/Delegation Yield.mdx",
+  "sourceDirName": "validation/Delegators",
+  "slug": "/validation/delegators/delegation-yield",
+  "permalink": "/validation/delegators/delegation-yield",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Delegators/Delegation Yield.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "delegation-yield",
+    "slug": "/validation/delegators/delegation-yield",
+    "sidebar_label": "Delegation Yield",
+    "description": "Delegation Yield"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Choosing a Validator",
+    "permalink": "/validation/delegators/choosing-a-validator"
+  },
+  "next": {
+    "title": "Unlock Periods",
+    "permalink": "/validation/delegators/unlock-periods"
+  }
+}

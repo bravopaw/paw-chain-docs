@@ -1,0 +1,20 @@
+{
+  "id": "ecosystem/wallet/paw-wallet-introduction",
+  "title": "PAW Wallet Introduction",
+  "description": "PAW Wallet Introduction",
+  "source": "@site/docs/ecosystem/wallet/PAW Wallet Introduction.mdx",
+  "sourceDirName": "ecosystem/wallet",
+  "slug": "/ecosystem/wallet/paw-wallet-introduction",
+  "permalink": "/ecosystem/wallet/paw-wallet-introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/wallet/PAW Wallet Introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "paw-wallet-introduction",
+    "slug": "/ecosystem/wallet/paw-wallet-introduction",
+    "sidebar_label": "Introduction",
+    "description": "PAW Wallet Introduction"
+  }
+}
