@@ -353,7 +353,6 @@ docs: {
   showLastUpdateTime: false,
   remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, configTabs],
   rehypePlugins: [rehypeKatex],
-  disableVersioning: true,
   onlyIncludeVersions: ['current'],
   versions: {
     current: {
