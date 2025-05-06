@@ -161,13 +161,6 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Temporary Fix',
-      items: [
-        'guides/docs/sidebar/items',  // your placeholder doc
-      ],
-    },
-    {
-      type: 'category',
       label: 'Legal and Compliance',
       link: {
         type: 'generated-index',

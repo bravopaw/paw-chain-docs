@@ -108,7 +108,7 @@ export default async function createConfigAsync() {
         ? 'warn'
         : 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/docusaurus.ico',
+    favicon: 'img/pawico.ico',
     customFields: {
       crashTest,
       isDeployPreview,
