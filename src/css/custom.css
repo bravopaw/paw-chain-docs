@@ -455,6 +455,16 @@ h1 {
   display: none;
 }
 
+/* Sidebar Logo - Light mode */
+[data-theme="light"] .sidebarLogo_isFc {
+  color: #214a9c !important;
+}
+
+/* Sidebar Logo - Dark mode */
+[data-theme="dark"] .sidebarLogo_isFc {
+  color: #dbd7ff !important;
+}
+
 
 
 .navbar__logo {

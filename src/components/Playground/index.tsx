@@ -18,7 +18,7 @@ const Playgrounds = [
   {
     name: '📦 PAW Swap',
     image: require('@site/static/img/playgrounds/swap-home.png'),
-    url: '/ecosystem/swap/paw-swap-introduction',
+    url: '/getting-started/connecting-to-paw-swap',
     urlTS: 'https://swap.pawchain.net',
     description: (
       <Translate id="playground.pawswap.description">
@@ -29,7 +29,7 @@ const Playgrounds = [
   {
     name: '📦 PAW Wallet',
     image: require('@site/static/img/playgrounds/wallet-home.png'),
-    url: '/ecosystem/wallet/paw-wallet-introduction',
+    url: '/getting-started/set-up-a-paw-wallet',
     urlTS: 'https://wallet.pawchain.net',
     description: (
       <Translate id="playground.pawwallet.description">

@@ -57,13 +57,13 @@ function getLocalizedConfigValue(key: keyof typeof ConfigLocalized) {
 
 export default async function createConfigAsync() {
   return {
-    title: 'Docusaurus',
+    title: 'PAW Chain Docs',
     tagline: getLocalizedConfigValue('tagline'),
-    organizationName: 'facebook',
-    projectName: 'docusaurus',
+    organizationName: 'pawchain',
+    projectName: 'docs',
     baseUrl,
     baseUrlIssueBanner: true,
-    url: 'https://docusaurus.io',
+    url: 'https://docs.pawchain.net',
     trailingSlash: isDeployPreview,
     stylesheets: [
       {
@@ -113,7 +113,7 @@ export default async function createConfigAsync() {
       crashTest,
       isDeployPreview,
       description:
-        'An optimized site generator in React. Docusaurus helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more.',
+        'Official documentation for PAW Chain, the world’s first Layer 3 blockchain. Learn about staking, validators, cross-chain tools, and more.',
     },
     staticDirectories: ['static'],
     themes: ['live-codeblock'],
@@ -342,7 +342,7 @@ export default async function createConfigAsync() {
         theme: PrismLight,
         darkTheme: PrismDark,
       },
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/paw-social-card.jpg',
       algolia: {
         appId: 'KIL8ZUEHIZ',
         apiKey: '159c65d178f11644fa8289c2c7287170',
