@@ -131,6 +131,14 @@ export default async function createConfigAsync() {
     baseUrl,
     baseUrlIssueBanner: true,
     url: 'https://docusaurus.io',
+    future: {
+      v4: !isSlower, // Not accurate, but good enough
+      experimental_faster: !isSlower,
+      experimental_storage: {
+        namespace: true,
+      },
+      experimental_router: router,
+    },
     // Dogfood both settings:
     // - force trailing slashes for deploy previews
     // - avoid trailing slashes in prod
@@ -234,6 +242,32 @@ export default async function createConfigAsync() {
         },
       ],
       [
+        './src/plugins/changelog/index.ts',
+        {
+          blogTitle: 'Docusaurus changelog',
+          blogDescription:
+            'Keep yourself up-to-date about new features in every release',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'Changelog',
+          routeBasePath: '/changelog',
+          showReadingTime: false,
+          postsPerPage: 20,
+          archiveBasePath: null,
+          authorsMapPath: 'authors.json',
+          feedOptions: {
+            type: 'all',
+            title: 'Docusaurus changelog',
+            description:
+              'Keep yourself up-to-date about new features in every release',
+            copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
+            language: defaultLocale,
+          },
+          onInlineAuthors: 'warn',
+        },
+      ],
+
+
+      [
         'ideal-image',
         {
           quality: 70,
@@ -313,27 +347,46 @@ export default async function createConfigAsync() {
         'classic',
         {
           debug: true, // force debug plugin usage
-docs: {
-  routeBasePath: '/',
-  path: 'docs',
-  sidebarPath: 'sidebars.ts',
-  editUrl: ({ docPath }) => {
-    return `https://github.com/facebook/docusaurus/edit/main/website/docs/${docPath}`;
-  },
-  admonitions: {
-    keywords: ['my-custom-admonition'],
-  },
-  showLastUpdateAuthor: false,
-  showLastUpdateTime: false,
-  remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, configTabs],
-  rehypePlugins: [rehypeKatex],
-  onlyIncludeVersions: ['current'],
-  versions: {
-    current: {
-      label: 'Current 🚧',
-    },
-  },
-},
+          docs: {
+            routeBasePath: '/',
+            path: 'docs',
+            sidebarPath: 'sidebars.ts',
+            // sidebarCollapsible: false,
+            // sidebarCollapsed: true,
+            editUrl: ({locale, docPath}) => {
+              if (locale !== defaultLocale) {
+                return `https://crowdin.com/project/docusaurus-v2/${locale}`;
+              }
+              // We want users to submit updates to the upstream/next version!
+              // Otherwise we risk losing the update on the next release.
+              const nextVersionDocsDirPath = 'docs';
+              return `https://github.com/facebook/docusaurus/edit/main/website/${nextVersionDocsDirPath}/${docPath}`;
+            },
+            admonitions: {
+              keywords: ['my-custom-admonition'],
+            },
+            showLastUpdateAuthor: false,
+            showLastUpdateTime: false,
+            remarkPlugins: [[npm2yarn, {sync: true}], remarkMath, configTabs],
+            rehypePlugins: [rehypeKatex],
+            disableVersioning: isVersioningDisabled,
+            lastVersion:
+              isDev ||
+              isVersioningDisabled ||
+              isDeployPreview ||
+              isBranchDeploy ||
+              isBuildFast
+                ? 'current'
+                : getLastStableVersion(),
+
+            onlyIncludeVersions: ['current'],
+
+            versions: {
+              current: {
+                label: `${getNextVersionName()} 🚧`,
+              },
+            },
+          },
           blog: {
             // routeBasePath: '/',
             path: 'blog',
