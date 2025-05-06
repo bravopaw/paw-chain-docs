@@ -145,7 +145,7 @@ const ChangelogPlugin: typeof pluginContentBlog =
       blogListComponent: '@theme/ChangelogList',
       blogPostComponent: '@theme/ChangelogPage',
     });
-  const changelogPath = path.resolve(process.cwd(), 'CHANGELOG.md');
+    const changelogPath = path.join(__dirname, '../../../../CHANGELOG.md');
     return {
       ...blogPlugin,
       name: 'changelog-plugin',
