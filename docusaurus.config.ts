@@ -245,7 +245,6 @@ export default async function createConfigAsync() {
           showReadingTime: false,
           postsPerPage: 20,
           archiveBasePath: null,
-          authorsMapPath: 'authors.json',
           feedOptions: {
             type: 'all',
             title: 'Docusaurus changelog',
