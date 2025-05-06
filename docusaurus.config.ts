@@ -357,7 +357,7 @@ export default async function createConfigAsync() {
       },
       navbar: {
         hideOnScroll: true,
-        title: 'Documentation',
+        title: 'Docs',
         logo: {
           alt: '',
           src: 'img/PawChainLogo.svg',
