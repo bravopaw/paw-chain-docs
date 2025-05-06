@@ -347,46 +347,28 @@ export default async function createConfigAsync() {
         'classic',
         {
           debug: true, // force debug plugin usage
-          docs: {
-            routeBasePath: '/',
-            path: 'docs',
-            sidebarPath: 'sidebars.ts',
-            // sidebarCollapsible: false,
-            // sidebarCollapsed: true,
-            editUrl: ({locale, docPath}) => {
-              if (locale !== defaultLocale) {
-                return `https://crowdin.com/project/docusaurus-v2/${locale}`;
-              }
-              // We want users to submit updates to the upstream/next version!
-              // Otherwise we risk losing the update on the next release.
-              const nextVersionDocsDirPath = 'docs';
-              return `https://github.com/facebook/docusaurus/edit/main/website/${nextVersionDocsDirPath}/${docPath}`;
-            },
-            admonitions: {
-              keywords: ['my-custom-admonition'],
-            },
-            showLastUpdateAuthor: false,
-            showLastUpdateTime: false,
-            remarkPlugins: [[npm2yarn, {sync: true}], remarkMath, configTabs],
-            rehypePlugins: [rehypeKatex],
-            disableVersioning: isVersioningDisabled,
-            lastVersion:
-              isDev ||
-              isVersioningDisabled ||
-              isDeployPreview ||
-              isBranchDeploy ||
-              isBuildFast
-                ? 'current'
-                : getLastStableVersion(),
-
-            onlyIncludeVersions: ['current'],
-
-            versions: {
-              current: {
-                label: `${getNextVersionName()} 🚧`,
-              },
-            },
-          },
+docs: {
+  routeBasePath: '/',
+  path: 'docs',
+  sidebarPath: 'sidebars.ts',
+  editUrl: ({ docPath }) => {
+    return `https://github.com/facebook/docusaurus/edit/main/website/docs/${docPath}`;
+  },
+  admonitions: {
+    keywords: ['my-custom-admonition'],
+  },
+  showLastUpdateAuthor: false,
+  showLastUpdateTime: false,
+  remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, configTabs],
+  rehypePlugins: [rehypeKatex],
+  disableVersioning: true,
+  onlyIncludeVersions: ['current'],
+  versions: {
+    current: {
+      label: 'Current 🚧',
+    },
+  },
+},
           blog: {
             // routeBasePath: '/',
             path: 'blog',
