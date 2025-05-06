@@ -8,29 +8,9 @@ export default {
   "tagline": "Build optimized websites quickly, focus on your content",
   "organizationName": "facebook",
   "projectName": "docusaurus",
-  "baseUrl": "/",
+  "baseUrl": "/zh-CN/",
   "baseUrlIssueBanner": true,
   "url": "https://docusaurus.io",
-  "future": {
-    "v4": {
-      "removeLegacyPostBuildHeadAttribute": true
-    },
-    "experimental_faster": {
-      "swcJsLoader": true,
-      "swcJsMinimizer": true,
-      "swcHtmlMinimizer": true,
-      "lightningCssMinimizer": true,
-      "mdxCrossCompilerCache": true,
-      "rspackBundler": true,
-      "rspackPersistentCache": true,
-      "ssgWorkerThreads": true
-    },
-    "experimental_storage": {
-      "namespace": true,
-      "type": "localStorage"
-    },
-    "experimental_router": "browser"
-  },
   "trailingSlash": false,
   "stylesheets": [
     {
@@ -83,28 +63,6 @@ export default {
   "plugins": [
     false,
     [
-      "./src/plugins/changelog/index.ts",
-      {
-        "blogTitle": "Docusaurus changelog",
-        "blogDescription": "Keep yourself up-to-date about new features in every release",
-        "blogSidebarCount": "ALL",
-        "blogSidebarTitle": "Changelog",
-        "routeBasePath": "/changelog",
-        "showReadingTime": false,
-        "postsPerPage": 20,
-        "archiveBasePath": null,
-        "authorsMapPath": "authors.json",
-        "feedOptions": {
-          "type": "all",
-          "title": "Docusaurus changelog",
-          "description": "Keep yourself up-to-date about new features in every release",
-          "copyright": "Copyright © 2025 Facebook, Inc.",
-          "language": "en"
-        },
-        "onInlineAuthors": "warn"
-      }
-    ],
-    [
       "ideal-image",
       {
         "quality": 70,
@@ -122,7 +80,7 @@ export default {
           "standalone",
           "queryString"
         ],
-        "swCustom": "C:\\Users\\alexe\\Downloads\\docusaurus-main\\docusaurus-main\\website\\src\\sw.js",
+        "swCustom": "/workspaces/paw-chain-docs/src/sw.js",
         "pwaHead": [
           {
             "tagName": "link",
@@ -205,16 +163,7 @@ export default {
           "rehypePlugins": [
             null
           ],
-          "disableVersioning": false,
-          "lastVersion": "current",
-          "onlyIncludeVersions": [
-            "current"
-          ],
-          "versions": {
-            "current": {
-              "label": "PAW Docs v1.1 🚧"
-            }
-          }
+          "lastVersion": "current"
         },
         "blog": {
           "path": "blog",
@@ -775,10 +724,6 @@ export default {
       "appId": "KIL8ZUEHIZ",
       "apiKey": "159c65d178f11644fa8289c2c7287170",
       "indexName": "pawchain_docs",
-      "replaceSearchResultPathname": {
-        "from": "^\\/docs\\/next\\/(.*)",
-        "to": "/$1"
-      },
       "contextualSearch": true,
       "searchParameters": {},
       "searchPagePath": "search"
@@ -828,15 +773,15 @@ export default {
           "items": [
             {
               "label": "Set Up a PAW Wallet",
-              "to": "/set-up-a-paw-wallet"
+              "to": "/getting-started/set-up-a-paw-wallet"
             },
             {
               "label": "How To Obtain $PAW",
-              "to": "/how-to-obtain-paw"
+              "to": "/getting-started/how-to-obtain-paw"
             },
             {
               "label": "Connect to PAW Swap",
-              "to": "/connecting-to-paw-swap"
+              "to": "/getting-started/connecting-to-paw-swap"
             }
           ]
         },
@@ -926,6 +871,21 @@ export default {
       },
       "options": {}
     }
+  },
+  "future": {
+    "experimental_faster": {
+      "swcJsLoader": false,
+      "swcJsMinimizer": false,
+      "swcHtmlMinimizer": false,
+      "lightningCssMinimizer": false,
+      "mdxCrossCompilerCache": false,
+      "rspackBundler": false
+    },
+    "experimental_storage": {
+      "type": "localStorage",
+      "namespace": false
+    },
+    "experimental_router": "browser"
   },
   "onDuplicateRoutes": "warn",
   "scripts": [],

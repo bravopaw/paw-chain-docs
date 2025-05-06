@@ -5,10 +5,10 @@
   "source": "@site/docs/legal-and-compliance/terms-of-use.mdx",
   "sourceDirName": "legal-and-compliance",
   "slug": "/legal-and-compliance/terms-of-use",
-  "permalink": "/legal-and-compliance/terms-of-use",
+  "permalink": "/zh-CN/legal-and-compliance/terms-of-use",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/legal-and-compliance/terms-of-use.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Legal and Compliance",
-    "permalink": "/category/legal-and-compliance"
+    "permalink": "/zh-CN/category/legal-and-compliance"
   },
   "next": {
     "title": "Privacy Policy",
-    "permalink": "/legal-and-compliance/privacy-policy"
+    "permalink": "/zh-CN/legal-and-compliance/privacy-policy"
   }
 }

@@ -5,10 +5,10 @@
   "source": "@site/docs/validation/Validators and Lockers.mdx",
   "sourceDirName": "validation",
   "slug": "/validation/validators-and-lockers",
-  "permalink": "/validation/validators-and-lockers",
+  "permalink": "/zh-CN/validation/validators-and-lockers",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Validators and Lockers.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Penalties",
-    "permalink": "/validation/delegators/penalties"
+    "permalink": "/zh-CN/validation/delegators/penalties"
   },
   "next": {
     "title": "Redis Database System",
-    "permalink": "/validation/redis-database-system"
+    "permalink": "/zh-CN/validation/redis-database-system"
   }
 }

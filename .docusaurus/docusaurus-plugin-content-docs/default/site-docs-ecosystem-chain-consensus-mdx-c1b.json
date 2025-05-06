@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/chain/Consensus.mdx",
   "sourceDirName": "ecosystem/chain",
   "slug": "/ecosystem/chain/consensus",
-  "permalink": "/ecosystem/chain/consensus",
+  "permalink": "/zh-CN/ecosystem/chain/consensus",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/chain/Consensus.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

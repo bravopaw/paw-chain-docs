@@ -22,6 +22,11 @@
       "name": "@docusaurus/plugin-debug",
       "version": "3.7.0"
     },
+    "docusaurus-plugin-google-gtag": {
+      "type": "package",
+      "name": "@docusaurus/plugin-google-gtag",
+      "version": "3.7.0"
+    },
     "docusaurus-plugin-sitemap": {
       "type": "package",
       "name": "@docusaurus/plugin-sitemap",
@@ -42,12 +47,14 @@
       "name": "@docusaurus/theme-search-algolia",
       "version": "3.7.0"
     },
-    "changelog-plugin": {
-      "type": "project"
-    },
     "docusaurus-plugin-ideal-image": {
       "type": "package",
       "name": "@docusaurus/plugin-ideal-image",
+      "version": "3.7.0"
+    },
+    "docusaurus-plugin-pwa": {
+      "type": "package",
+      "name": "@docusaurus/plugin-pwa",
       "version": "3.7.0"
     },
     "docusaurus-theme-mermaid": {

@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/wallet/How It Works.mdx",
   "sourceDirName": "ecosystem/wallet",
   "slug": "/ecosystem/wallet/how-it-works",
-  "permalink": "/ecosystem/wallet/how-it-works",
+  "permalink": "/zh-CN/ecosystem/wallet/how-it-works",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/wallet/How It Works.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

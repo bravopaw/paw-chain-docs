@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/swap/PAW Swap Introduction.mdx",
   "sourceDirName": "ecosystem/swap",
   "slug": "/ecosystem/swap/paw-swap-introduction",
-  "permalink": "/ecosystem/swap/paw-swap-introduction",
+  "permalink": "/zh-CN/ecosystem/swap/paw-swap-introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/swap/PAW Swap Introduction.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

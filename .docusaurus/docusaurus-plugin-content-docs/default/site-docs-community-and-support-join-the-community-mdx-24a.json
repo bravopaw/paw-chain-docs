@@ -5,10 +5,10 @@
   "source": "@site/docs/community-and-support/join-the-community.mdx",
   "sourceDirName": "community-and-support",
   "slug": "/community-and-support/join-the-community",
-  "permalink": "/community-and-support/join-the-community",
+  "permalink": "/zh-CN/community-and-support/join-the-community",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/community-and-support/join-the-community.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Community and Support",
-    "permalink": "/category/community-and-support"
+    "permalink": "/zh-CN/category/community-and-support"
   },
   "next": {
     "title": "PAW Chain FAQ",
-    "permalink": "/community-and-support/paw-chain-faq"
+    "permalink": "/zh-CN/community-and-support/paw-chain-faq"
   }
 }

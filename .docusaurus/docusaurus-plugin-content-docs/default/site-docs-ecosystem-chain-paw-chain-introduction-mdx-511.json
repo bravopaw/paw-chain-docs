@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/chain/PAW Chain Introduction.mdx",
   "sourceDirName": "ecosystem/chain",
   "slug": "/ecosystem/chain/paw-chain-introduction",
-  "permalink": "/ecosystem/chain/paw-chain-introduction",
+  "permalink": "/zh-CN/ecosystem/chain/paw-chain-introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/chain/PAW Chain Introduction.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

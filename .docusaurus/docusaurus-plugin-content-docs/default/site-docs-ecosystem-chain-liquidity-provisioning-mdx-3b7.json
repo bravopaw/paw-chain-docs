@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/chain/Liquidity Provisioning.mdx",
   "sourceDirName": "ecosystem/chain",
   "slug": "/ecosystem/chain/liquidity-provisioning",
-  "permalink": "/ecosystem/chain/liquidity-provisioning",
+  "permalink": "/zh-CN/ecosystem/chain/liquidity-provisioning",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/chain/Liquidity Provisioning.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

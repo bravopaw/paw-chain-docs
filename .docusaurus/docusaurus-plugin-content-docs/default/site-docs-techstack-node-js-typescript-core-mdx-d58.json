@@ -5,10 +5,10 @@
   "source": "@site/docs/techstack/Node.js & Typescript Core.mdx",
   "sourceDirName": "techstack",
   "slug": "/techstack/node-js-typescript-core",
-  "permalink": "/techstack/node-js-typescript-core",
+  "permalink": "/zh-CN/techstack/node-js-typescript-core",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/techstack/Node.js & Typescript Core.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Technology Stack",
-    "permalink": "/category/technology-stack"
+    "permalink": "/zh-CN/category/technology-stack"
   },
   "next": {
     "title": "Redis-Powered Blockchain Ledger",
-    "permalink": "/techstack/redis-ledger"
+    "permalink": "/zh-CN/techstack/redis-ledger"
   }
 }

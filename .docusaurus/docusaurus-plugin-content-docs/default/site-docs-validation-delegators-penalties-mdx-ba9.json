@@ -5,10 +5,10 @@
   "source": "@site/docs/validation/Delegators/Penalties.mdx",
   "sourceDirName": "validation/Delegators",
   "slug": "/validation/delegators/penalties",
-  "permalink": "/validation/delegators/penalties",
+  "permalink": "/zh-CN/validation/delegators/penalties",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Delegators/Penalties.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Unlock Periods",
-    "permalink": "/validation/delegators/unlock-periods"
+    "permalink": "/zh-CN/validation/delegators/unlock-periods"
   },
   "next": {
     "title": "Validators and Lockers",
-    "permalink": "/validation/validators-and-lockers"
+    "permalink": "/zh-CN/validation/validators-and-lockers"
   }
 }

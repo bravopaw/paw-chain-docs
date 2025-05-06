@@ -5,10 +5,10 @@
   "source": "@site/docs/community-and-support/paw-chain-glossary.mdx",
   "sourceDirName": "community-and-support",
   "slug": "/community-and-support/paw-chain-glossary",
-  "permalink": "/community-and-support/paw-chain-glossary",
+  "permalink": "/zh-CN/community-and-support/paw-chain-glossary",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/community-and-support/paw-chain-glossary.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Common Issues and Fixes",
-    "permalink": "/community-and-support/common-issues-and-fixes"
+    "permalink": "/zh-CN/community-and-support/common-issues-and-fixes"
   },
   "next": {
-    "title": "Legal and Compliance",
-    "permalink": "/category/legal-and-compliance"
+    "title": "Sidebar items",
+    "permalink": "/zh-CN/sidebar/items"
   }
 }

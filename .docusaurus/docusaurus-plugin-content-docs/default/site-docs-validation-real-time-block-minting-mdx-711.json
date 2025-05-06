@@ -5,10 +5,10 @@
   "source": "@site/docs/validation/Real-Time Block Minting.mdx",
   "sourceDirName": "validation",
   "slug": "/validation/real-time-block-minting",
-  "permalink": "/validation/real-time-block-minting",
+  "permalink": "/zh-CN/validation/real-time-block-minting",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Real-Time Block Minting.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Validator Incentive Mechanism",
-    "permalink": "/validation/validator-incentive-mechanism"
+    "permalink": "/zh-CN/validation/validator-incentive-mechanism"
   },
   "next": {
     "title": "Validator-Driven Block Sizes",
-    "permalink": "/validation/validator-driven-block-sizes"
+    "permalink": "/zh-CN/validation/validator-driven-block-sizes"
   }
 }

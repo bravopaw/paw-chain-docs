@@ -5,10 +5,10 @@
   "source": "@site/docs/validation/Cross Stitching.mdx",
   "sourceDirName": "validation",
   "slug": "/validation/cross-stitching",
-  "permalink": "/validation/cross-stitching",
+  "permalink": "/zh-CN/validation/cross-stitching",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Cross Stitching.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Redis Database System",
-    "permalink": "/validation/redis-database-system"
+    "permalink": "/zh-CN/validation/redis-database-system"
   },
   "next": {
     "title": "Tokenomics",
-    "permalink": "/category/tokenomics"
+    "permalink": "/zh-CN/category/tokenomics"
   }
 }

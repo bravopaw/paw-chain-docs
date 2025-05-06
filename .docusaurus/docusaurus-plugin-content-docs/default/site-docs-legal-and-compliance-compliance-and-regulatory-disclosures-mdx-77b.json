@@ -5,10 +5,10 @@
   "source": "@site/docs/legal-and-compliance/compliance-and-regulatory-disclosures.mdx",
   "sourceDirName": "legal-and-compliance",
   "slug": "/legal-and-compliance/compliance-and-regulatory-disclosures",
-  "permalink": "/legal-and-compliance/compliance-and-regulatory-disclosures",
+  "permalink": "/zh-CN/legal-and-compliance/compliance-and-regulatory-disclosures",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/legal-and-compliance/compliance-and-regulatory-disclosures.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,6 +20,6 @@
   "sidebar": "docs",
   "previous": {
     "title": "Privacy Policy",
-    "permalink": "/legal-and-compliance/privacy-policy"
+    "permalink": "/zh-CN/legal-and-compliance/privacy-policy"
   }
 }

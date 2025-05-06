@@ -1,0 +1,30 @@
+{
+  "id": "getting-started/set-up-a-paw-wallet",
+  "title": "Set Up a PAW Wallet",
+  "description": "How to install and configure PAW Chain",
+  "source": "@site/docs/getting-started/Set Up a PAW Wallet.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/set-up-a-paw-wallet",
+  "permalink": "/zh-CN/getting-started/set-up-a-paw-wallet",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "set-up-a-paw-wallet",
+    "title": "Set Up a PAW Wallet",
+    "sidebar_label": "Set Up a PAW Wallet",
+    "description": "How to install and configure PAW Chain",
+    "slug": "/getting-started/set-up-a-paw-wallet"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/zh-CN/category/getting-started"
+  },
+  "next": {
+    "title": "Accessing PAW Chain Mainnet",
+    "permalink": "/zh-CN/getting-started/accessing-paw-chain-mainnet"
+  }
+}

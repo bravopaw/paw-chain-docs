@@ -5,10 +5,10 @@
   "source": "@site/docs/tokenomics/paw-coin-overview.mdx",
   "sourceDirName": "tokenomics",
   "slug": "/tokenomics/paw-coin-overview",
-  "permalink": "/tokenomics/paw-coin-overview",
+  "permalink": "/zh-CN/tokenomics/paw-coin-overview",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/tokenomics/paw-coin-overview.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

@@ -1,0 +1,30 @@
+{
+  "id": "getting-started/connecting-to-paw-swap",
+  "title": "Connecting to PAW Swap",
+  "description": "How to install and configure PAW Chain",
+  "source": "@site/docs/getting-started/Connecting to PAW Swap.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/connecting-to-paw-swap",
+  "permalink": "/zh-CN/getting-started/connecting-to-paw-swap",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "connecting-to-paw-swap",
+    "title": "Connecting to PAW Swap",
+    "sidebar_label": "Connecting to PAW Swap",
+    "description": "How to install and configure PAW Chain",
+    "slug": "/getting-started/connecting-to-paw-swap"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "How to Obtain $PAW",
+    "permalink": "/zh-CN/getting-started/how-to-obtain-paw"
+  },
+  "next": {
+    "title": "Technology Overview",
+    "permalink": "/zh-CN/category/technology-overview"
+  }
+}

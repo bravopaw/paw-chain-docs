@@ -28,11 +28,11 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: false,
       items: [
-        'Set Up a PAW Wallet',
-        'Accessing PAW Chain Mainnet',
-        'Supported Wallets',
-        'How to Obtain $PAW',
-        'Connecting to PAW Swap',
+        'getting-started/set-up-a-paw-wallet',
+        'getting-started/accessing-paw-chain-mainnet',
+        'getting-started/supported-wallets',
+        'getting-started/how-to-obtain-paw',
+        'getting-started/connecting-to-paw-swap',
       ],
     },
     {
@@ -157,6 +157,13 @@ const sidebars: SidebarsConfig = {
         'community-and-support/paw-chain-faq',
         'community-and-support/common-issues-and-fixes',
         'community-and-support/paw-chain-glossary',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Temporary Fix',
+      items: [
+        'guides/docs/sidebar/items',  // your placeholder doc
       ],
     },
     {

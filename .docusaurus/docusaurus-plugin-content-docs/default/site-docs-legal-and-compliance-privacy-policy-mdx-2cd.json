@@ -5,10 +5,10 @@
   "source": "@site/docs/legal-and-compliance/privacy-policy.mdx",
   "sourceDirName": "legal-and-compliance",
   "slug": "/legal-and-compliance/privacy-policy",
-  "permalink": "/legal-and-compliance/privacy-policy",
+  "permalink": "/zh-CN/legal-and-compliance/privacy-policy",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/legal-and-compliance/privacy-policy.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Terms of Use",
-    "permalink": "/legal-and-compliance/terms-of-use"
+    "permalink": "/zh-CN/legal-and-compliance/terms-of-use"
   },
   "next": {
     "title": "Compliance and Regulatory Disclosures",
-    "permalink": "/legal-and-compliance/compliance-and-regulatory-disclosures"
+    "permalink": "/zh-CN/legal-and-compliance/compliance-and-regulatory-disclosures"
   }
 }

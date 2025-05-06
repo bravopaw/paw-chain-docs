@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/wallet/Multi-Asset Wallet Features.mdx",
   "sourceDirName": "ecosystem/wallet",
   "slug": "/ecosystem/wallet/multi-asset-wallet-features",
-  "permalink": "/ecosystem/wallet/multi-asset-wallet-features",
+  "permalink": "/zh-CN/ecosystem/wallet/multi-asset-wallet-features",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/wallet/Multi-Asset Wallet Features.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

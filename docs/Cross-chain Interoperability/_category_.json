@@ -1,0 +1,11 @@
+{
+    "label": "Cross-Chain Interoperability",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "title": "Docusaurus Guides",
+      "description": "Let's learn about the most important Docusaurus concepts!",
+      "keywords": ["Delegators"],
+      "image": "/img/docusaurus.png"
+    }
+  }  

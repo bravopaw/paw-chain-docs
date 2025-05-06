@@ -5,10 +5,10 @@
   "source": "@site/docs/validation/Delegators/Unlock Periods.mdx",
   "sourceDirName": "validation/Delegators",
   "slug": "/validation/delegators/unlock-periods",
-  "permalink": "/validation/delegators/unlock-periods",
+  "permalink": "/zh-CN/validation/delegators/unlock-periods",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Delegators/Unlock Periods.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Delegation Yield",
-    "permalink": "/validation/delegators/delegation-yield"
+    "permalink": "/zh-CN/validation/delegators/delegation-yield"
   },
   "next": {
     "title": "Penalties",
-    "permalink": "/validation/delegators/penalties"
+    "permalink": "/zh-CN/validation/delegators/penalties"
   }
 }

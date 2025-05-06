@@ -5,14 +5,23 @@
   "source": "@site/docs/guides/docs/sidebar/items.mdx",
   "sourceDirName": "guides/docs/sidebar",
   "slug": "/sidebar/items",
-  "permalink": "/sidebar/items",
+  "permalink": "/zh-CN/sidebar/items",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/guides/docs/sidebar/items.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "toc_max_heading_level": 4,
     "slug": "/sidebar/items"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "PAW Chain Glossary",
+    "permalink": "/zh-CN/community-and-support/paw-chain-glossary"
+  },
+  "next": {
+    "title": "Legal and Compliance",
+    "permalink": "/zh-CN/category/legal-and-compliance"
   }
 }

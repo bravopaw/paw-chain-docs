@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/swap/How It Works.mdx",
   "sourceDirName": "ecosystem/swap",
   "slug": "/ecosystem/swap/how-it-works",
-  "permalink": "/ecosystem/swap/how-it-works",
+  "permalink": "/zh-CN/ecosystem/swap/how-it-works",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/swap/How It Works.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

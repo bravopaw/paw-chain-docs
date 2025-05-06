@@ -5,10 +5,10 @@
   "source": "@site/docs/tokenomics/utility-and-governance.mdx",
   "sourceDirName": "tokenomics",
   "slug": "/tokenomics/utility-and-governance",
-  "permalink": "/tokenomics/utility-and-governance",
+  "permalink": "/zh-CN/tokenomics/utility-and-governance",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/tokenomics/utility-and-governance.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

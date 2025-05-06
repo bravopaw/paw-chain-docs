@@ -5,10 +5,10 @@
   "source": "@site/docs/validation/Delegators/Choosing a Validator.mdx",
   "sourceDirName": "validation/Delegators",
   "slug": "/validation/delegators/choosing-a-validator",
-  "permalink": "/validation/delegators/choosing-a-validator",
+  "permalink": "/zh-CN/validation/delegators/choosing-a-validator",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/validation/Delegators/Choosing a Validator.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Delegators",
-    "permalink": "/category/delegators"
+    "permalink": "/zh-CN/category/delegators"
   },
   "next": {
     "title": "Delegation Yield",
-    "permalink": "/validation/delegators/delegation-yield"
+    "permalink": "/zh-CN/validation/delegators/delegation-yield"
   }
 }

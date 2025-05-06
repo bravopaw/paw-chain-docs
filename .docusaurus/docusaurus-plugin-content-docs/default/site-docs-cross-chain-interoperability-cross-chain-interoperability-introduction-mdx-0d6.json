@@ -5,10 +5,10 @@
   "source": "@site/docs/Cross-chain Interoperability/Cross-Chain-Interoperability-Introduction.mdx",
   "sourceDirName": "Cross-chain Interoperability",
   "slug": "/cross-chain-interoperability/introduction",
-  "permalink": "/cross-chain-interoperability/introduction",
+  "permalink": "/zh-CN/cross-chain-interoperability/introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/Cross-chain Interoperability/Cross-Chain-Interoperability-Introduction.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

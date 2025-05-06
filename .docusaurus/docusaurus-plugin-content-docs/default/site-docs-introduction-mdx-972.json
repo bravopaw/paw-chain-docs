@@ -5,10 +5,10 @@
   "source": "@site/docs/introduction.mdx",
   "sourceDirName": ".",
   "slug": "/",
-  "permalink": "/",
+  "permalink": "/zh-CN/",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/introduction.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -18,6 +18,6 @@
   "sidebar": "docs",
   "next": {
     "title": "Getting Started",
-    "permalink": "/category/getting-started"
+    "permalink": "/zh-CN/category/getting-started"
   }
 }

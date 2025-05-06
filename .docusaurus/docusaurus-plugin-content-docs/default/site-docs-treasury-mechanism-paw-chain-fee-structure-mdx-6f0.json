@@ -5,10 +5,10 @@
   "source": "@site/docs/treasury-mechanism/paw-chain-fee-structure.mdx",
   "sourceDirName": "treasury-mechanism",
   "slug": "/treasury-mechanism/paw-chain-fee-structure",
-  "permalink": "/treasury-mechanism/paw-chain-fee-structure",
+  "permalink": "/zh-CN/treasury-mechanism/paw-chain-fee-structure",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/treasury-mechanism/paw-chain-fee-structure.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -20,10 +20,10 @@
   "sidebar": "docs",
   "previous": {
     "title": "Treasury Management",
-    "permalink": "/category/treasury-management"
+    "permalink": "/zh-CN/category/treasury-management"
   },
   "next": {
     "title": "Community and Support",
-    "permalink": "/category/community-and-support"
+    "permalink": "/zh-CN/category/community-and-support"
   }
 }

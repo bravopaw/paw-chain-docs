@@ -5,10 +5,10 @@
   "source": "@site/docs/treasury-mechanism/treasury-owned-liquidity.mdx",
   "sourceDirName": "treasury-mechanism",
   "slug": "/treasury-mechanism/treasury-owned-liquidity",
-  "permalink": "/treasury-mechanism/treasury-owned-liquidity",
+  "permalink": "/zh-CN/treasury-mechanism/treasury-owned-liquidity",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/treasury-mechanism/treasury-owned-liquidity.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

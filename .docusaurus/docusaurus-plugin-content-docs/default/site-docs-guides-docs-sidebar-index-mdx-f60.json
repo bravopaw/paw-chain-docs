@@ -1,17 +1,15 @@
 {
   "id": "guides/docs/sidebar/index",
-  "title": "Sidebar",
-  "description": "Creating a sidebar is useful to:",
+  "title": "index",
+  "description": "",
   "source": "@site/docs/guides/docs/sidebar/index.mdx",
   "sourceDirName": "guides/docs/sidebar",
-  "slug": "/sidebar",
-  "permalink": "/sidebar",
+  "slug": "/guides/docs/sidebar/",
+  "permalink": "/zh-CN/guides/docs/sidebar/",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/guides/docs/sidebar/index.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
-  "frontMatter": {
-    "slug": "/sidebar"
-  }
+  "frontMatter": {}
 }

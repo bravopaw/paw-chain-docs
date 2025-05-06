@@ -5,10 +5,10 @@
   "source": "@site/docs/guides/docs/sidebar/multiple-sidebars.mdx",
   "sourceDirName": "guides/docs/sidebar",
   "slug": "/sidebar/multiple-sidebars",
-  "permalink": "/sidebar/multiple-sidebars",
+  "permalink": "/zh-CN/sidebar/multiple-sidebars",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/guides/docs/sidebar/multiple-sidebars.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

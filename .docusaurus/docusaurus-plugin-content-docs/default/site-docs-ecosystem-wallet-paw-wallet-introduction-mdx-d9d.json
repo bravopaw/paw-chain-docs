@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/wallet/PAW Wallet Introduction.mdx",
   "sourceDirName": "ecosystem/wallet",
   "slug": "/ecosystem/wallet/paw-wallet-introduction",
-  "permalink": "/ecosystem/wallet/paw-wallet-introduction",
+  "permalink": "/zh-CN/ecosystem/wallet/paw-wallet-introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/wallet/PAW Wallet Introduction.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {

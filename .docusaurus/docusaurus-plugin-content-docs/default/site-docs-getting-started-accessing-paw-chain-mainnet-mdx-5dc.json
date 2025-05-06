@@ -1,0 +1,30 @@
+{
+  "id": "getting-started/accessing-paw-chain-mainnet",
+  "title": "Accessing PAW Chain Mainnet",
+  "description": "tbc",
+  "source": "@site/docs/getting-started/Accessing PAW Chain Mainnet.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/accessing-paw-chain-mainnet",
+  "permalink": "/zh-CN/getting-started/accessing-paw-chain-mainnet",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "accessing-paw-chain-mainnet",
+    "title": "Accessing PAW Chain Mainnet",
+    "sidebar_label": "Accessing PAW Chain Mainnet",
+    "description": "tbc",
+    "slug": "/getting-started/accessing-paw-chain-mainnet"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Set Up a PAW Wallet",
+    "permalink": "/zh-CN/getting-started/set-up-a-paw-wallet"
+  },
+  "next": {
+    "title": "Supported Wallets",
+    "permalink": "/zh-CN/getting-started/supported-wallets"
+  }
+}

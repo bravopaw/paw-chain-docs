@@ -1,0 +1,30 @@
+{
+  "id": "getting-started/supported-wallets",
+  "title": "Supported Wallets",
+  "description": "Supported Wallets",
+  "source": "@site/docs/getting-started/supported-wallets.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/supported-wallets",
+  "permalink": "/zh-CN/getting-started/supported-wallets",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "supported-wallets",
+    "title": "Supported Wallets",
+    "sidebar_label": "Supported Wallets",
+    "description": "Supported Wallets",
+    "slug": "/getting-started/supported-wallets"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Accessing PAW Chain Mainnet",
+    "permalink": "/zh-CN/getting-started/accessing-paw-chain-mainnet"
+  },
+  "next": {
+    "title": "How to Obtain $PAW",
+    "permalink": "/zh-CN/getting-started/how-to-obtain-paw"
+  }
+}

@@ -5,10 +5,10 @@
   "source": "@site/docs/ecosystem/chain/Infinite Scaling.mdx",
   "sourceDirName": "ecosystem/chain",
   "slug": "/ecosystem/chain/infinite-scaling",
-  "permalink": "/ecosystem/chain/infinite-scaling",
+  "permalink": "/zh-CN/ecosystem/chain/infinite-scaling",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/ecosystem/chain/Infinite Scaling.mdx",
+  "editUrl": "https://crowdin.com/project/docusaurus-v2/zh-CN",
   "tags": [],
   "version": "current",
   "frontMatter": {
