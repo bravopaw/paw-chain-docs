@@ -159,7 +159,7 @@ export default async function createConfigAsync() {
             {
               tagName: 'link',
               rel: 'icon',
-              href: 'img/docusaurus.png',
+              href: 'img/paw.png',
             },
             {
               tagName: 'link',
@@ -184,18 +184,18 @@ export default async function createConfigAsync() {
             {
               tagName: 'link',
               rel: 'apple-touch-icon',
-              href: 'img/docusaurus.png',
+              href: 'img/paw.png',
             },
             {
               tagName: 'link',
               rel: 'mask-icon',
-              href: 'img/docusaurus.png',
+              href: 'img/paw.png',
               color: 'rgb(62, 204, 94)',
             },
             {
               tagName: 'meta',
               name: 'msapplication-TileImage',
-              content: 'img/docusaurus.png',
+              content: 'img/paw.png',
             },
             {
               tagName: 'meta',
