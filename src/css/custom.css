@@ -465,6 +465,11 @@ h1 {
   color: #dbd7ff !important;
 }
 
+/* Hide the announcement bar in both light and dark mode */
+div[class^="announcementBar_"] {
+  display: none !important;
+}
+
 
 
 .navbar__logo {
