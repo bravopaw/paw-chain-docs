@@ -455,9 +455,10 @@ h1 {
   display: none;
 }
 
-.announcementBar_mb4j {
-    display: none;
+div[class^='announcementBar_'] {
+    display: none !important;
 }
+
 
 
 .navbar__logo {
