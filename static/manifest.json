@@ -1,7 +1,7 @@
 {
   "name": "PAW Chain Docs",
   "short_name": "PAW Docs",
-  "theme_color": "#2196f3",
+  "theme_color": "#224a9c",
   "background_color": "#424242",
   "display": "standalone",
   "scope": "./",
