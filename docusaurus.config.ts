@@ -344,9 +344,9 @@ export default async function createConfigAsync() {
       },
       image: 'img/paw-social-card.jpg',
       algolia: {
-        appId: 'KIL8ZUEHIZ',
-        apiKey: '159c65d178f11644fa8289c2c7287170',
-        indexName: 'pawchain_docs',
+        appId: '031S3GZWCF',
+        apiKey: '127eafa430f9be9e26783f3625a3af9f',
+        indexName: 'pawchain',
         replaceSearchResultPathname:
           isDev || isDeployPreview
             ? {
