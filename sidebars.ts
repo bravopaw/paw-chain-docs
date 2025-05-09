@@ -62,7 +62,7 @@ const sidebars: SidebarsConfig = {
             {
               type: 'doc',
               id: 'Cross-chain Interoperability/Integrated Blockchains',
-              label: 'Tutorial',
+              label: 'Integrated Blockchains',
             },
             {
               type: 'doc',
