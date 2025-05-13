@@ -18,7 +18,7 @@ const Playgrounds = [
   {
     name: '📦 PAW Swap',
     image: require('@site/static/img/playgrounds/swap-home.png'),
-    url: '/getting-started/connecting-to-paw-swap',
+    url: '/ecosystem/swap/paw-swap-introduction',
     urlTS: 'https://swap.pawchain.net',
     description: (
       <Translate id="playground.pawswap.description">
@@ -29,7 +29,7 @@ const Playgrounds = [
   {
     name: '📦 PAW Wallet',
     image: require('@site/static/img/playgrounds/wallet-home.png'),
-    url: '/getting-started/set-up-a-paw-wallet',
+    url: '/ecosystem/wallet/paw-wallet-introduction',
     urlTS: 'https://wallet.pawchain.net',
     description: (
       <Translate id="playground.pawwallet.description">
@@ -40,7 +40,7 @@ const Playgrounds = [
   {
     name: '📦 PAW Scanner',
     image: require('@site/static/img/playgrounds/scanner-home.png'),
-    url: 'https://scanner.pawchain.net',
+    url: '/ecosystem/scanner/paw-scanner-introduction',
     urlTS: 'https://scanner.pawchain.net',
     description: (
       <Translate id="playground.pawscanner.description">
@@ -51,7 +51,7 @@ const Playgrounds = [
   {
     name: '📦 PAW Locker',
     image: require('@site/static/img/playgrounds/locker-home.png'),
-    url: 'https://locker.pawchain.net',
+    url: '/ecosystem/locker/paw-locker-features',
     urlTS: 'https://locker.pawchain.net',
     description: (
       <Translate id="playground.pawlocker.description">
