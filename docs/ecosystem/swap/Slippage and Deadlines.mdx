@@ -1,0 +1,95 @@
+---
+id: slippage-and-deadline
+slug: /ecosystem/swap/slippage-and-deadline
+sidebar_label: Slippage & Deadlines
+description: Guide to setting slippage tolerance and transaction deadlines on PAW Swap, ensuring smoother trades and better control in volatile market conditions.
+---
+
+# Setting Slippage on PAW Swap {#set-slippage}
+
+## Understanding Slippage
+
+This guide walks you through how to set slippage when performing a token swap on **PAW Swap**. Slippage is the difference between the expected price of a trade and the actual price executed. Setting the right slippage helps ensure your transaction goes through smoothly without failing due to price fluctuations.
+
+### Price Fluctuations in Slippage
+
+Price fluctuations refer to changes in token price between the moment you start a transaction and when it is confirmed on-chain. This is common in volatile markets.
+
+For example, if you attempt to swap a token priced at `$1.00`, but it rises to `$1.05` before confirmation, the transaction may fail if your slippage tolerance is set too low (e.g. `0.5%`).
+
+Setting slippage too low may result in failed trades. Too high, and you risk overpaying.
+
+## i. Accessing the Slippage Settings
+
+- On the **PAW Swap** interface, locate the **cog icon** in the top right of the swap UI.
+- Click it to open the settings menu.
+
+## ii. Viewing Default Slippage
+
+- You will see a default slippage setting of `0.5%`.
+
+## iii. Adjusting Slippage
+
+- Click the **Custom** tab to enter your own slippage percentage.
+
+## iv. When to Adjust Slippage
+
+- `0.1% – 0.5%`: For stable, high-liquidity tokens
+- `0.5% – 2%`: For moderately volatile assets
+- `Above 2%`: For high volatility tokens or large orders
+
+## v. Setting Your Custom Slippage
+
+- Enter your desired slippage percentage.
+- Confirm to apply the setting.
+
+## vi. Completing Your Swap
+
+- Continue your swap — your selected slippage will apply automatically.
+
+## Additional Tips
+
+- Avoid using extremely high slippage percentages.
+- If a swap fails repeatedly, increase slippage slightly until it succeeds.
+
+# Setting Transaction Deadlines on PAW Swap {#transaction-deadlines}
+
+## Understanding Transaction Deadlines
+
+This section covers how to set transaction deadlines on **PAW Swap**. A transaction deadline is the maximum time a swap can remain pending before it’s cancelled automatically.
+
+Transaction deadlines are measured in **minutes**. If a transaction isn't confirmed within that time, it will be cancelled — helping avoid stuck swaps during congestion.
+
+For example, if you set a deadline of `20` minutes and the swap doesn’t confirm in time, the trade is cancelled and funds remain untouched.
+
+## i. Accessing the Transaction Deadline Settings
+
+- On the **PAW Swap** interface, click the **cog icon** in the top right to open the settings menu.
+
+## ii. Viewing Default Transaction Deadline
+
+- The default setting is `10` minutes.
+
+## iii. Adjusting the Transaction Deadline
+
+- Input your desired time (in minutes) in the **Transaction Deadline** field.
+
+## iv. When to Adjust the Deadline
+
+- **High congestion**: Increase the deadline to avoid failed swaps.
+- **Fast networks**: Use a shorter deadline to avoid outdated swaps.
+
+## v. Setting Your Custom Deadline
+
+- Enter the time value you prefer.
+- Confirm your settings to apply the change.
+
+## vi. Completing Your Swap
+
+- Continue with your transaction — the deadline setting will apply automatically.
+
+## Additional Tips
+
+- Avoid short deadlines during busy times.
+- Watch current network speed and congestion levels.
+- Always verify your settings before confirming a swap.
