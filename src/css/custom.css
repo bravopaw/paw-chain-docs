@@ -358,6 +358,17 @@ h1 {
 [data-theme="dark"] h1 {
   color: #dbd7ff !important; /* light purple for dark mode */
 }
+
+/* h1 - Light mode */
+h2 {
+  color: #214a9c !important; /* light blue for light theme */
+  transition: color 0.3s ease;
+}
+
+/* h1 - Dark mode */
+[data-theme="dark"] h2 {
+  color: #dbd7ff !important; /* light purple for dark mode */
+}
 /* Active menu link - Light mode */
 .menu__link--active:not(.menu__link--sublist) {
   color: rgb(121 0 255 / 9%) !important; /* Light mode active link color */
