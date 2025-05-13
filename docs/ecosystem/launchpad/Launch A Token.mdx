@@ -1,1 +1,95 @@
+---
+id: launch-token
+slug: /ecosystem/launchpad/launch-token
+sidebar_label: Launch a Token
+description: Step-by-step guide for launching a token on PAW Chain, including onboarding, authentication, bridging, and enabling Developer Mode.
+---
 
+# Launch a Token on PAW Chain
+
+## i. Accessing the Onboarding Site
+
+Open your preferred browser and visit: `https://onboarding.pawchain.net/`
+
+## ii. Connect Your PAW Wallet
+
+- Click the **Connect PAW Wallet** button in the upper right-hand corner
+- Follow the prompts to connect your **PAW Wallet**
+- Once connected, click the **Authenticate** button
+
+## iii. Fill Out the Onboarding Form
+
+Complete the onboarding form with the following token information:
+
+- Primary network
+- ERC-20 network address
+- Any other networks where the same token contract exists
+- Renounced contract status (yes/no)
+- Team contact information
+- Token logo
+
+:::note
+
+Double-check that your **Deployer PAW Wallet Address** is accurate.
+
+:::
+
+## iv. Submit
+
+After reviewing the form:
+
+- Press **Submit** at the bottom of the screen
+- Allow time for review and authentication
+
+You will be contacted using the information provided when your token is ready for deployment to **PAW Chain**.
+
+# Bridging Your Token to PAW Chain
+
+## v. Connect Your Wallet
+
+- Open `https://wallet.pawchain.net`
+- Click **Disconnected** in the top right corner of **PAW Wallet**
+- Choose your preferred wallet (**MetaMask**, **WalletConnect**, etc.)
+- Follow the prompts to connect
+
+## vi. Select a Network
+
+In the pop-up window, select the network you intend to bridge from.
+
+## vii. Open the Settings Menu
+
+- Click your **PAW Wallet address** in the top right
+- Select **Settings**
+
+## viii. Enable Developer Mode
+
+- Scroll to the bottom and press [**Developer Mode**](/ecosystem/wallet/developer-mode)
+- A pop-up will ask to confirm the action — press **Yes** to enable
+
+## ix. Start the Bridge
+
+- Press the **Bridge** button
+- Select your token in the **Bridge From** dropdown
+
+### Bridging Instructions
+
+- **For EVM chains**: Choose the full token amount to bridge in
+- **For Solana**: First, send `1 token` to the **PAW Chain deployer contract** on Solana
+  - Afterward, bridge in the remaining amount
+
+## x. Bridge Approval
+
+If this is your first time bridging the token:
+
+- Click **Approve** to grant the bridge permission to access your token
+- Confirm in both **PAW Wallet** and your connected wallet
+
+After approval, the **Bridge** button will reappear.
+
+## xi. Complete the Bridge
+
+- Press **Bridge** again to confirm and finalise the transaction
+- Repeat this process for each network you want your token deployed on
+
+> **Note**
+> All EVM chains must use the **same token contract address** across chains for compatibility.
