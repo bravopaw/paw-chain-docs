@@ -13,7 +13,7 @@ PAW Chain’s Cross Stitching architecture introduces a hybrid rotational model 
 
 ### Pre-Block Verification
 
-Before a block is proposed, two validators from different levels are selected randomly to verify the transaction data and block conditions. The validators who verify pre-block data cannot be the same validators who propose the block, to prevent validators from proposing invalid blocks that they themselves have pre-approved. This separation increases security as the validators have no incentive to pass invalid data. If a malicious validator verifies bad data, they would not be allowed to submit the block, and it would be rejected by the proposer.
+Before a sub-block is proposed, a randomly assigned validator acts as a pre-checker, verifying transaction data and lane conditions. A different validator, acting as the proposer, is responsible for assembling and submitting the lane. These roles are always assigned to separate validators, ensuring that no single validator can both verify and propose the same data. This separation increases security by preventing a malicious actor from self-approving invalid transactions. If a pre-checker allows invalid data, the post-checker will catch it, and the block will be rejected.
 
 ### Block Submission (Proposal and Consensus)
 
@@ -47,7 +47,7 @@ More validators per phase allow transaction pools to be processed in parallel, s
 Increased validator counts allow for rapid rotation between blocks. Validators participating in one block’s pre-check phase may participate in another block’s post-check phase, maintaining the cross-linked security principle while distributing workload more evenly.
 4. Improved Fault Tolerance
 Should any validator become unresponsive or malicious, the larger pool provides immediate redundancy, allowing block validation to proceed without disruption.
-5. Dynamic Scaling and Sharding Compatibility
+5. Dynamic Scaling and Parallel Execution Lanes
 The validator pool can be divided dynamically into multiple validation groups ("lanes"), where each group handles a different set of transactions using Cross Stitching rules independently. This supports horizontal scalability without restructuring the protocol.
 
 ### Overall Architectural Differences
