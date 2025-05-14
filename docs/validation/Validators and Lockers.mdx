@@ -43,19 +43,19 @@ The validator unstake process follows a two-step approach:
 - If a validator has not completed 14 days as a validator, a `10%` penalty is deducted from their staked amount.
 - The deducted penalty amount is transferred to the PAW Treasury.
 - If the validator has exceeded 14 days, no penalty is applied.
-- Once unlocked, validators must wait 48 hours before being able to unstake their tokens.
+- Once unlocked, validators must wait 7 days before being able to unstake their tokens.
 - A countdown timer will be displayed in the PAW wallet for tracking the waiting period.
 
 ## Step 2: Unstaking
 
-- After the 48-hour waiting period, the unstake button will be enabled in the PAW wallet.
+- After the 7-day waiting period, the unstake button will be enabled in the PAW wallet.
 - Validators can then proceed to unstake and retrieve their tokens back into their wallet.
 
 ## Special Scenario: Validator at Risk of Deselecting
 
 - If a locker, staking under a validator, unlocks their staked amount, and causes the validator’s total stake to drop below the required 2.5 trillion, a warning notification will be displayed.
-- The warning informs the validator that they will be deselected after 48 hours if they fail to restore the required staking amount.
-- The validator has 48 hours to restake and meet the minimum stake requirement displayed in the warning section.
+- The warning informs the validator that they will be deselected after 7 days if they fail to restore the required staking amount.
+- The validator has 7 days to restake and meet the minimum stake requirement displayed in the warning section.
 - If they fail to restake, they will automatically be removed as a validator.
 
 ### **Lockers' Unstake Logic**
