@@ -7,9 +7,11 @@ description: Details of PAW Chain’s Redis-based ledger architecture, focusing 
 
 # Redis-Powered Blockchain Ledger
 
-PAW Chain uses Redis data stores as it’s core blockchain ledger. The use of Redis allows for the last five blocks to be stored in memory, to ensure rapid access and quick confirmations, and let’s older blocks be stored on HDDs for long-term storage.
+**PAW Chain** uses `Redis` data stores as its core blockchain ledger. Redis allows for blocks to be stored directly in memory, enabling fast access and ultra-low confirmation times across the network.
 
-It also employs edge routing to select validators with the lowest latency, further reducing response times and improving user experience.
+As of now, all blocks are held in memory to maximise performance. A future upgrade will introduce a hybrid model — storing recent blocks in memory while archiving older blocks to disk for long-term scalability.
+
+The network also employs `edge routing` to dynamically select validators with the lowest latency, further improving confirmation speed and overall user responsiveness.
 
 
 <figure style={{ textAlign: 'center' }}>
