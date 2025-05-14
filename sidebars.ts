@@ -270,7 +270,6 @@ const sidebars: SidebarsConfig = {
       label: 'PAW Chain Validation',
       link: {type: 'doc', id: 'validation/validation-overview'},
       items: [
-        'validation/validation-overview',
         'validation/validator-incentive-mechanism',
         'validation/real-time-block-minting',
         'validation/validator-driven-block-sizes',
