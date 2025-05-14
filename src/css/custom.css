@@ -376,7 +376,7 @@ h2 {
 }
 
 /* h2 - Dark mode */
-[data-theme="dark"] pagination-nav__sublabel {
+[data-theme="dark"] .pagination-nav__sublabel {
   color: #dbd7ff !important; /* light purple for dark mode */
 }
 
@@ -386,7 +386,7 @@ h2 {
 }
 
 /* h2 - Dark mode */
-[data-theme="dark"] pagination-nav__label {
+[data-theme="dark"] .pagination-nav__label {
   color: #dbd7ff !important; /* light purple for dark mode */
 }
 
