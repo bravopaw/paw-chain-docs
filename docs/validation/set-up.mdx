@@ -22,7 +22,7 @@ import TabItem from '@theme/TabItem';
 ## 🧩 Step 1: Update Packages
 
 ```bash title="Update package index"
-sudo apt update
+  apt update
 ```
 
 ---
@@ -30,7 +30,7 @@ sudo apt update
 ## 🌐 Step 2: Install HTTPS Support
 
 ```bash title="Install HTTPS packages"
-sudo apt install -y ca-certificates curl gnupg
+  apt install -y ca-certificates curl gnupg
 ```
 
 ---
@@ -38,7 +38,7 @@ sudo apt install -y ca-certificates curl gnupg
 ## ⚙️ Step 3: Install Prerequisites
 
 ```bash title="Install core dependencies"
-sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+  apt install -y apt-transport-https ca-certificates curl software-properties-common
 ```
 
 ---
@@ -57,7 +57,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/
 
 <BrowserWindow>
 ```bash title="Add stable Docker repo"
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" |   tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 </BrowserWindow>
 
@@ -66,7 +66,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 ## 🔄 Step 6: Update Again
 
 ```bash title="Update package index (again)"
-sudo apt update
+  apt update
 ```
 
 ---
@@ -74,7 +74,7 @@ sudo apt update
 ## 🐳 Step 7: Install Docker Engine
 
 ```bash title="Install Docker and Compose plugin"
-sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 ---
@@ -145,12 +145,12 @@ docker system prune -a --volumes
 Transfer the `.deb` file to your server, then run:
 
 ```bash title="Install validator .deb file"
-sudo dpkg -i paw-validator-application_1.0.0_amd64.deb
+  dpkg -i paw-validator-application_1.0.0_amd64.deb
 ```
 
 ```bash title="Fix broken dependencies if needed"
-sudo apt --fix-broken install -y  
-sudo dpkg -i paw-validator-application_1.0.0_amd64.deb
+  apt --fix-broken install -y  
+  dpkg -i paw-validator-application_1.0.0_amd64.deb
 ```
 
 ---
@@ -169,15 +169,15 @@ dpkg -l | grep paw-validator
   <TabItem value="standard" label="Run Node">
 
   ```bash
-  sudo paw-validator-application --no-sandbox
+    paw-validator-application --no-sandbox
   ```
 
   </TabItem>
   <TabItem value="fix" label="Fix Library Error">
 
   ```bash
-  sudo apt install -y libasound2t64  
-  sudo paw-validator-application --no-sandbox
+    apt install -y libasound2t64  
+    paw-validator-application --no-sandbox
   ```
 
   </TabItem>
