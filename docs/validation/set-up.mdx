@@ -106,7 +106,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 </Tabs>
 
 Results should look like this:
-![](/val/1.png)
+![](/img/val/1.png)
 
 ---
 
@@ -132,9 +132,9 @@ Results should look like this:
 </Tabs>
 
 ---
-![](/val/2.png)
+![](/img/val/2.png)
 
-![](/val/3.png)
+![](/img/val/3.png)
 ---
 
 ## 🧹 Step 10: Clean Docker 
@@ -156,15 +156,15 @@ Transfer the `.deb` file to your server, then run:
 ```bash title="Install validator .deb file"
   dpkg -i paw-validator-application_1.0.0_amd64.deb
 ```
-![](/val/4.png)
+![](/img/val/4.png)
 
 ```bash title="Fix broken dependencies if needed"
   apt --fix-broken install -y  
   dpkg -i paw-validator-application_1.0.0_amd64.deb
 ```
-![](/val/5.png)
+![](/img/val/5.png)
 
-![](/val/6.png)
+![](/img/val/6.png)
 ---
 
 ## 🔍 Step 12: Verify Installation
@@ -172,7 +172,7 @@ Transfer the `.deb` file to your server, then run:
 ```bash title="Check validator package is installed"
 dpkg -l | grep paw-validator
 ```
-![](/val/7.png)
+![](/img/val/7.png)
 
 If you see an output like above, the application is installed successfully.
 
@@ -198,9 +198,9 @@ If you see an output like above, the application is installed successfully.
   </TabItem>
 </Tabs>
 
-![](/val/8.png)
+![](/img/val/8.png)
 
-![](/val/9.png)
+![](/img/val/9.png)
 
 ---
 
