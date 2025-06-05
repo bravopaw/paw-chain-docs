@@ -15,6 +15,8 @@ import TabItem from '@theme/TabItem';
 > **Currently supported OS:** Linux distributions only. This guide is based on a fresh **Ubuntu Server** install.  
 > Future versions will introduce Windows and Mac support.
 
+> This guide assumes a fresh installation of **Ubuntu Server**.
+
 ---
 
 ## 🧩 Step 1: Update Packages
@@ -140,6 +142,8 @@ docker system prune -a --volumes
 
 ## 📦 Step 11: Install the Validator Package
 
+Transfer the `.deb` file to your server, then run:
+
 ```bash title="Install validator .deb file"
 sudo dpkg -i paw-validator-application_1.0.0_amd64.deb
 ```
@@ -192,4 +196,4 @@ After entering your key, the validator will appear on **PAW Chain** and begin pa
 
 ---
 
-> Need help with Access Key setup or token staking? Visit PAW Dashboard for detailed instructions.
+{/* > Need help with Access Key setup or token staking? Visit PAW Dashboard for detailed instructions. */}
