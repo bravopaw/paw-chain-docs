@@ -1,0 +1,190 @@
+---
+id: set-up
+slug: /ecosystem/validator/set-up-test
+sidebar_label: Validator Setup (Linux)
+description: Full guide for installing and launching the V1 validator package on Ubuntu Server for PAW Chain.
+---
+
+# Set Up a Validator Node (V1)
+
+> **Currently supported OS:** Linux distributions only. This guide is based on a fresh **Ubuntu Server** install.  
+> Future versions will introduce Windows and Mac support.
+
+---
+
+## 🧩 Step 1: Update Packages
+
+```bash title="Update package index"
+sudo apt update
+```
+
+---
+
+## 🌐 Step 2: Install HTTPS Support
+
+```bash title="Install HTTPS packages"
+sudo apt install -y ca-certificates curl gnupg
+```
+
+---
+
+## ⚙️ Step 3: Install Prerequisites
+
+```bash title="Install core dependencies"
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+```
+
+---
+
+## 🔐 Step 4: Add Docker GPG Key
+
+<BrowserWindow>
+```bash title="Add Docker's official GPG key"
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+</BrowserWindow>
+
+---
+
+## 🧾 Step 5: Add Docker Repository
+
+<BrowserWindow>
+```bash title="Add stable Docker repo"
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+</BrowserWindow>
+
+---
+
+## 🔄 Step 6: Update Again
+
+```bash title="Update package index (again)"
+sudo apt update
+```
+
+---
+
+## 🐳 Step 7: Install Docker Engine
+
+```bash title="Install Docker and Compose plugin"
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+---
+
+## ✅ Step 8: Verify Docker Installation
+
+<Tabs>
+  <TabItem value="docker" label="Docker Version">
+
+  ```bash
+  docker --version
+  ```
+
+  </TabItem>
+  <TabItem value="compose" label="Compose Version">
+
+  ```bash
+  docker compose version
+  ```
+
+  </TabItem>
+  <TabItem value="status" label="Service Status">
+
+  ```bash
+  systemctl status docker
+  ```
+
+  </TabItem>
+</Tabs>
+
+---
+
+## 🧪 Step 9: Test Docker
+
+<Tabs>
+  <TabItem value="run" label="Run Hello World">
+
+  ```bash
+  docker run hello-world
+  ```
+
+  </TabItem>
+  <TabItem value="ps" label="List Containers">
+
+  ```bash
+  docker ps -a
+  ```
+
+  </TabItem>
+</Tabs>
+
+---
+
+## 🧹 Step 10: Clean Docker (Optional)
+
+```bash title="Remove all containers"
+docker rm -f $(docker ps -aq)
+```
+
+```bash title="Prune unused data"
+docker system prune -a --volumes
+```
+
+---
+
+## 📦 Step 11: Install the Validator Package
+
+```bash title="Install validator .deb file"
+sudo dpkg -i paw-validator-application_1.0.0_amd64.deb
+```
+
+```bash title="Fix broken dependencies if needed"
+sudo apt --fix-broken install -y  
+sudo dpkg -i paw-validator-application_1.0.0_amd64.deb
+```
+
+---
+
+## 🔍 Step 12: Verify Installation
+
+```bash title="Check validator package is installed"
+dpkg -l | grep paw-validator
+```
+
+---
+
+## 🚀 Step 13: Run the Validator
+
+<Tabs>
+  <TabItem value="standard" label="Run Node">
+
+  ```bash
+  sudo paw-validator-application --no-sandbox
+  ```
+
+  </TabItem>
+  <TabItem value="fix" label="Fix Library Error">
+
+  ```bash
+  sudo apt install -y libasound2t64  
+  sudo paw-validator-application --no-sandbox
+  ```
+
+  </TabItem>
+</Tabs>
+
+---
+
+## 🔑 Step 14: Enter Your Access Key
+
+Once launched, you’ll be prompted to enter your **Access Key**. This is issued when:
+
+- You self-stake as a validator  
+- Or you reach eligibility via locked token support
+
+After entering your key, the validator will appear on **PAW Chain** and begin participating in block validation.
+
+---
+
+> Need help with Access Key setup or token staking? Visit [PAW Dashboard](/ecosystem/dashboard) for detailed instructions.
