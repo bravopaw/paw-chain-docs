@@ -285,8 +285,8 @@ export default async function createConfigAsync() {
             : undefined,
           sitemap: {
             lastmod: 'date',
-            priority: null,
-            changefreq: null,
+            priority: 0.5,
+            changefreq: 'weekly',
           },
           svgr: {
             svgrConfig: {
