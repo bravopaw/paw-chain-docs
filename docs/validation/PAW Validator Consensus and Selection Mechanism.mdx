@@ -54,13 +54,13 @@ For the selected validators, reward and penalty are calculated based on their st
 
 1. Get the total staked amount of all selected validators.
 2. Calculate each validator’s stake percentage relative to the total stake.
-3. Take 80% of the validators' potion from the processing fee as the total pool for reward/penalty
+3. Take 70% of the validators' potion from the processing fee as the total pool for reward/penalty
 4. Distribute the reward and penalty among validators based on their stake percentage.
 
 ### *Example Calculation:*
 
 - *Processing Fee = $100*
-- *80% of Processing Fee = $80*
+- *70% of Processing Fee = $70*
 - *Selected Validators and Stakes:*
     - *Validator A → 15,000*
     - *Validator B → 14,000*
@@ -70,7 +70,7 @@ For the selected validators, reward and penalty are calculated based on their st
 - *Total Stake = 34,500*
 - *Each Validator's Reward/Penalty Calculation:*
     - *Stake Percentage = (Validator's Stake / Total Stake) * 100*
-    - *Reward/Penalty = 80% Processing Fee * Stake Percentage*
+    - *Reward/Penalty = 70% Processing Fee * Stake Percentage*
 
 ### **Step 3: Checking Validator Activity**
 
